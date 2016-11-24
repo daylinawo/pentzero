@@ -1,19 +1,14 @@
 {
-  "name": "roots/bedrock",
+  "name": "pentzero/videoblog",
   "type": "project",
   "license": "MIT",
   "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
   "homepage": "https://roots.io/bedrock/",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Franklin Mathurin",
+      "email": "frank.mathurin@gmail.com",
+      "homepage": "https://github.com/daylinawo"
     }
   ],
   "keywords": [
@@ -38,7 +33,10 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.6.1",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/wck-custom-fields-and-custom-post-types-creator": "2.0.3",
+    "wpackagist-plugin/video-embed-thumbnail-generator": "4.6.12"
+
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
