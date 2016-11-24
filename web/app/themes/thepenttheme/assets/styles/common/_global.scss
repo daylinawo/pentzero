@@ -1,0 +1,465 @@
+/*  ===============================
+		0a. SETUP SCSS MIXINS
+	===============================
+*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  -moz-border-radius:$radius;
+  -ms-border-radius:$radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+   -webkit-border-top-left-radius: $radius;
+   border-top-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+     -webkit-border-top-right-radius: $radius;
+     border-top-right-radius: $radius;
+     background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+   -webkit-border-bottom-left-radius: $radius;
+   border-bottom-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+     -webkit-border-top-left-radius: $radius;
+     border-top-left-radius: $radius;
+     background-clip: padding-box;
+}
+/*  ===============================
+		0b. SETUP SCSS VARIABLES
+	===============================
+*/
+	$footer-push: 50px;
+	$font-stack : 'DINNext', sans-serif !important;
+	$primary-color: #EEB781 !important;
+
+/*  =================================
+		0c. DEFAULT FONT STYLES
+	=================================
+*/
+
+/* Default Version */
+
+@font-face {
+	font-family: "DINNext";
+    src: url("//db.onlinewebfonts.com/t/b2ed61aa48d23f00e7f11e5c7bb78322.eot");
+    src: url("//db.onlinewebfonts.com/t/b2ed61aa48d23f00e7f11e5c7bb78322.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/b2ed61aa48d23f00e7f11e5c7bb78322.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/b2ed61aa48d23f00e7f11e5c7bb78322.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/b2ed61aa48d23f00e7f11e5c7bb78322.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/b2ed61aa48d23f00e7f11e5c7bb78322.svg#DINNextW06-Light") format("svg");
+
+}
+/* Regular Version */
+
+@font-face {
+	font-family: "DINNext";
+    src: url("//db.onlinewebfonts.com/t/e72226517a8e28f6d824d5300c747448.eot");
+    src: url("//db.onlinewebfonts.com/t/e72226517a8e28f6d824d5300c747448.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/e72226517a8e28f6d824d5300c747448.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/e72226517a8e28f6d824d5300c747448.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/e72226517a8e28f6d824d5300c747448.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/e72226517a8e28f6d824d5300c747448.svg#DINNextW06-Regular") format("svg");
+    font-weight: bold;
+}
+/*  ===============================
+		0d. DEFAULT STYLES
+	===============================
+*/	
+	html, body {
+    height: 100%;
+ 	}
+	body{
+		font-family: $font-stack;
+	}
+	.wrap{
+		min-height:100%;
+	}
+	.main{
+		padding:0 !important;
+	}
+	.content{
+		padding-bottom: $footer-push;
+	}
+/* Opera Footer Fix */
+	body:before {
+		content:"";
+		height:100%;
+		float:left;
+		width:0;
+		margin-top:-32767px;
+	}
+	.left{
+		float:left;
+	}
+	.right{
+		float:right;
+	}
+	.clear{
+		clear:both;
+	}
+	.search-bar-container input[type="search"]{
+		height:28px;
+	}
+/*  ===============================
+		1 SETUP MEDIA QUERIES 
+	===============================
+*/
+/* 
+		------------------------------
+		1a.    LARGER SCREEN SIZE
+		------------------------------
+ */
+		@media (min-width:1200px){
+			
+		}
+/*
+		-------------------------------
+		1b. MEDIUM TO LARGE SCREEN SIZE
+		-------------------------------
+*/		@media (min-width:768px) and (max-width:992px) {
+			.container{
+				width:780px;
+			}
+		}
+		@media (min-width:768px){
+			.container{
+				max-width: 980px;
+			}
+			header .navbar{
+				@include border-radius(12px)
+				min-height:40px !important;
+			}
+			/* ----VERTICALLY CENTERING TABLE ELEMENTS---- */
+			.vcenter{
+				display:table;
+				height:131px;
+			}
+			.vcenter .vert{
+				display:table-cell;
+				vertical-align: middle;
+			}
+			.navbar-default{
+				background-color: transparent;
+				border: none;
+			}
+			.navbar-collapse .row{
+					margin:0;
+			}
+			.navbar-nav{	
+					width:100%;
+					padding: 0;
+					min-height:30px !important;
+
+					li{
+						width: 25%;
+				    	width: calc(100% / 4);
+					}
+					li a{
+					    height: 40px;
+						padding-top:10px !important; 
+						padding-bottom:0 !important;
+					}
+					li:first-child a, li:first-child .active{
+						@include border-left-radius( 12px);
+					}
+					li:last-child a{
+						@include border-right-radius( 12px);
+					}
+				}
+			.navbar-default .navbar-nav > .active:first-child  ,
+			.navbar-default .navbar-nav > .active:first-child > a,
+			.navbar-default .navbar-nav > .active:first-child > a:focus {
+							@include border-left-radius( 12px);
+			}
+			.navbar-default .navbar-nav > .active:last-child  ,
+			.navbar-default .navbar-nav > .active:last-child > a,
+			.navbar-default .navbar-nav > .active:last-child > a:focus {
+							@include border-right-radius( 12px);
+			}
+
+			/*  -------------------------
+					 DROPDOWN LINKS
+				------------------------- */
+			.navbar-nav li > ul{
+				width:100%;
+				border: 0;
+				background-color: transparent;
+				min-height:40px;
+				box-shadow:none;
+			}	
+			.navbar-nav li > ul li{
+				width:100%;
+			}
+			.navbar-nav li:hover > ul{
+				display:block;
+			}
+
+		}
+/* 
+		------------------------------
+		1c.    SMALL SCREEN SIZES
+		------------------------------
+ */
+		@media (max-width:767px){
+			header .logo{
+				display: inline-block;
+				text-align:	center;
+				padding: 15px 0;
+				}
+			.search-bar-container{
+				margin-bottom:20px;
+			}
+			.blog-post{
+			 	margin:auto;
+			}
+			.thumbnail-img img{	
+				/* 
+					EMPTY
+				*/
+			}
+		}
+
+/*  =====================================================
+		2. MYTHEME HEADER, BANNER, NAVIGATION STYLES
+	=====================================================
+*/
+	header {
+
+		nav{
+			width:100%;
+		}
+
+	}
+	.navbar-nav{	
+		
+		width:100%;	
+
+		li{
+		text-align:center;
+		}
+
+		li a{
+			font-size:16px;
+			color: #fff !important;
+			background-color:#000;
+			text-transform: uppercase;
+			display:block;
+		}
+
+		li a:hover{
+			color: #000 !important;
+			background-color: #ffffff !important;
+		}
+	}
+
+	.navbar-default .navbar-nav > .active{
+	   color: #000;
+	   background: #000;
+	 }
+
+	.navbar-default .navbar-nav > .active,
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:focus {
+		color: $primary-color;
+		background-color: #000 !important;
+	}
+
+	.navbar-default .navbar-nav > .open > a, 
+	.navbar-default .navbar-nav > .open > a:hover, 
+	.navbar-default .navbar-nav > .open > a:focus {
+		color: $primary-color;
+		background-color: #000 !important;
+	}
+/*  ====================================
+		2b. ADVERTISEMENT BOX STYLE
+	====================================
+*/
+	.ad-box{
+		height:auto; padding: 0 15px 0 3px;
+	}
+	.ad{
+		background-color:#222;
+		text-align:	center;
+		width:100%; height:250px;
+		padding:10px 0;
+		color: #777;
+	}
+/*  ================================
+		3a. COMMON POSTS STYLES
+	================================
+*/	.row .push-down{
+		padding-bottom:30px;
+	}
+	.simple-push .blog-post{
+		margin-bottom:	30px !important;
+	}
+	.blog-post h3{
+			margin:0;
+			margin-top: 8px;
+		}
+
+	article header .entry-header{
+		font-size:	15px;
+		a{
+			color: $primary-color;
+			font-weight: bold;
+		}
+	}
+			p time{
+			font-size: 11px;
+		}
+
+/*  ======================================
+		3b. SPECIFIC HOME POSTS STYLES
+	======================================
+*/	.carousel{
+		background-color: transparent !important;
+	}
+	.carousel-container{
+		padding:30px 0;
+		background-color: #000;
+		@include border-bottom-radius(12px);
+	}
+
+	.carousel-control.left, .carousel-control.right{
+			@include border-bottom-radius(12px);
+	}
+	.carousel-control.left{
+		left: 15px;
+	}
+	.carousel-control.right{
+		right: 15px !important;
+	}
+
+	/* ===== FULL WIDTH VIDEO STYLE ===== */
+
+	.large-featured-video{
+		width:100%;
+		height:auto;
+		/* position: relative; */
+	}
+	.video-container{
+		position: relative; 
+		height: 0; 
+		overflow: hidden; 
+		width: 100%; 
+		height: auto; 	
+	}
+	.video-container video{
+		width:100%;
+      /*transform: scale(1.2);
+ 		-webkit-transform: scale(1.2); */ 
+	}
+
+	header.sub{
+		margin:8px 0;
+		padding: 8px 10px;
+		min-width: 100%;
+		background-color: #000;
+		@include border-radius(12px);
+	}
+
+	header.sub h1, header.sub h2{
+		text-align:center;
+		text-transform: uppercase;
+		font-size:24px;
+		color: $primary-color;
+		margin:0;
+	}
+	/* ===== FEATURED VIDEOS STYLE ===== */
+	.video-box{
+		min-width:100%;
+		background-color: #000;
+		padding:15px 0;
+		margin: 0 10px 2px 0;
+		@include border-top-radius(12px);
+	}
+	@media (max-width: 767px){
+		.video-box{
+			padding-bottom: 0;
+		}
+		.video-box .video{
+			padding-bottom:20px;
+		}
+	}
+	@media (min-width:768px){
+		.video-box .video{
+			padding-right:0 !important;
+			padding-left:0 !important;
+
+		}
+	}
+	/* ===== LATEST UPDATES STYLE ===== */
+	.thumbnail-img{
+		height:0;
+		padding:56.25% 0 0 0;
+	    overflow: hidden;
+	    position: relative;
+	}
+	.thumbnail-img img{
+	    position: absolute;
+	    left: -1000%;
+	    right: -1000%;
+	    top: -1000%;
+	    bottom: -1000%;
+	    margin: auto;
+	    max-width:100%;
+	    height:auto;
+	}
+	/* #latest-updates div.push-down div.col-sm-4 {
+		padding-right: 5px;
+		padding-left: 5px;
+	} */
+
+	#latest-updates div.push-down div:nth-child(3n+1).col-sm-4 {
+		padding-right: 3px;
+	}
+	#latest-updates div.push-down div:nth-child(3n+3).col-sm-4 {
+		padding-left: 3px;
+	}
+	#latest-updates div.push-down div:nth-child(3n+2).col-sm-4 {
+		padding: 0 10px 0 8px;
+	}
+
+/*  ======================================
+		 		FOOTER STYLE
+	======================================
+*/
+	footer{
+		position:	relative;
+		margin-top: (-$footer-push);
+		height: $footer-push;
+		clear:	both;
+	}
+	footer.content-info{
+		background-color: #000;
+		width:100%;
+		text-align:center;
+		color: #fff;
+		font-weight:bold;
+		overflow: hidden;
+	}
+	footer .container{
+		padding:15px 0 !important;
+	} 
+	footer p{
+		margin: 0 !important;
+	}
+	
