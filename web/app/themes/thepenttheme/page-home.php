@@ -1,6 +1,6 @@
 	<div class="home-content large-featured-video container-fluid">
 		<div class="row">
-			<div id="video_container" class="video-container"> 
+			<div id="video_container" class="video-container">
 				<video id="video">
 					<source src="app/themes/mytheme/assets/videos/nines_trapper_of_the_year.mp4" type="video/mp4">
 					<source src="app/themes/mytheme/assets/videos/nines_trapper_of_the_year.webm" type="video/webm">
@@ -9,10 +9,10 @@
 			</div>
 		</div>
 	</div>
-
+<!-- BODE WAS ERE 2016 -->
 	<!-- BEGIN FEATURED VIDEOS SECTION -->
 	<section class="home-content featured-videos container">
-		
+
 			<header class="sub">
 					<h2>Featured Videos</h2>
 			</header>
@@ -41,16 +41,16 @@
 		</header>
 
 		<div class="push-down row">
-		  		<?php 
+		  		<?php
 		  		$args = array(
 		  			'post_type'=>'video',
 		  			'posts_per_page' => 3,
 		  			);
 
-		  			$lastBlog = new WP_Query($args); 
+		  			$lastBlog = new WP_Query($args);
 		  			if($lastBlog->have_posts() ):
 		  				while($lastBlog->have_posts() ): $lastBlog->the_post(); ?>
-						
+
 						<div class="col-xs-6 col-sm-4 simple-push">
 								<? get_template_part('templates/content', 'featured'); ?>
 						</div>
@@ -63,18 +63,18 @@
 		</div>
 
 		<div class="push-down row">
-			
-		  		<?php 
+
+		  		<?php
 		  		$args = array(
 		  			'post_type'=>'post',
 		  			'posts_per_page' => 3,
 		  			'offset' => 1,
 		  			);
 
-		  			$lastBlog = new WP_Query($args); 
+		  			$lastBlog = new WP_Query($args);
 		  			if($lastBlog->have_posts() ):
 		  				while($lastBlog->have_posts() ): $lastBlog->the_post(); ?>
-						
+
 						<div class="col-xs-6 col-sm-4 simple-push">
 								<? get_template_part('templates/content', 'featured'); ?>
 						</div>
@@ -87,16 +87,16 @@
 		</div>
 
 		<div class="push-down row">
-		  		<?php 
+		  		<?php
 		  		$args = array(
 		  			'post_type'=>'post',
 		  			'posts_per_page' => 4,
 		  			);
 
-		  			$lastBlog = new WP_Query($args); 
+		  			$lastBlog = new WP_Query($args);
 		  			if($lastBlog->have_posts() ):
 		  				while($lastBlog->have_posts() ): $lastBlog->the_post(); ?>
-						
+
 						<div class="col-xs-12 col-sm-3">
 								<? get_template_part('templates/content', 'featured'); ?>
 						</div>
@@ -109,16 +109,16 @@
 		</div>
 
 		<div class="push-down row">
-		  		<?php 
+		  		<?php
 		  		$args = array(
 		  			'post_type'=>'post',
 		  			'posts_per_page' => 4,
 		  			);
 
-		  			$lastBlog = new WP_Query($args); 
+		  			$lastBlog = new WP_Query($args);
 		  			if($lastBlog->have_posts() ):
 		  				while($lastBlog->have_posts() ): $lastBlog->the_post(); ?>
-						
+
 						<div class="col-xs-12 col-sm-3">
 								<? get_template_part('templates/content', 'featured'); ?>
 						</div>
@@ -130,16 +130,16 @@
 		  		?>
 		</div>
 		<div class="push-down row">
-		  		<?php 
+		  		<?php
 		  		$args = array(
 		  			'post_type'=>'post',
 		  			'posts_per_page' => 4,
 		  			);
 
-		  			$lastBlog = new WP_Query($args); 
+		  			$lastBlog = new WP_Query($args);
 		  			if($lastBlog->have_posts() ):
 		  				while($lastBlog->have_posts() ): $lastBlog->the_post(); ?>
-						
+
 						<div class="col-xs-12 col-sm-3">
 								<? get_template_part('templates/content', 'featured'); ?>
 						</div>
