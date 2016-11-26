@@ -3,7 +3,7 @@
   <div class="banner container">
     <div class="row">
       <div class="logo col-xs-12 col-sm-4 vcenter">
-            <? mytheme_custom_logo();?>
+            <? penttheme_the_custom_logo();?>
       </div>
       <div class="search-bar-container col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-4 vcenter">
           <?php  get_search_form(); ?>
@@ -27,9 +27,9 @@
             <nav class="collapse navbar-collapse" role="navigation">
               <div class="row">
               <?php
-              if (has_nav_menu('primary')) :
+              if (has_nav_menu('primary_navigation')) :
                 wp_nav_menu([
-                 'theme_location' => 'primary',
+                 'theme_location' => 'primary_navigation',
                  'walker' => new wp_bootstrap_navwalker(),
                  'menu_class' => 'nav navbar-nav'
                   ]);

@@ -222,7 +222,7 @@
 				display: inline-block;
 				text-align:	center;
 				padding: 15px 0;
-				}
+			}
 			.search-bar-container{
 				margin-bottom:20px;
 			}
@@ -240,6 +240,10 @@
 		2. MYTHEME HEADER, BANNER, NAVIGATION STYLES
 	=====================================================
 */
+	.logo img{
+		width: 90px !important;
+		height: auto;
+	}
 	header {
 
 		nav{

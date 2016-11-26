@@ -30,23 +30,10 @@ unset($file, $filepath);
 
 /* 
   =================================
-          SETUP PRIMARY NAV
-  =================================
-*/
-function mytheme_theme_setup() {
-
-    add_theme_support('menus');
-
-    register_nav_menu('primary', 'Primary Header Navigation');
-}
-add_action('init', 'mytheme_theme_setup');
-
-/* 
-  =================================
           SETUP CUSTOM LOGO
   =================================
 */
-function mytheme_setup() {
+function penttheme_setup() {
   add_theme_support('custom-logo', array(
           'height'      => 240, 
           'width'       => 240,
@@ -54,10 +41,11 @@ function mytheme_setup() {
           'flex-width'  => true,
       ));
 }
+add_action('after_setup_theme', 'penttheme_setup');
 
-add_action('after_setup_theme', 'mytheme_setup');
+// Create function to call logo in header
 
-function mytheme_custom_logo() {
+function penttheme_the_custom_logo() {
     // Try to retrieve the Custom Logo
     $output = '';
     if (function_exists('the_custom_logo'))
@@ -115,7 +103,5 @@ function comicpress_copyright() {
         THEME SUPPORT FUNCTION
   =================================
 */
-add_theme_support('custom-background');
-add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
 add_theme_support('html5', array('search-form'));

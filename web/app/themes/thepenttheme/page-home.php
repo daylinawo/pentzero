@@ -2,9 +2,9 @@
 		<div class="row">
 			<div id="video_container" class="video-container">
 				<video id="video">
-					<source src="app/themes/mytheme/assets/videos/nines_trapper_of_the_year.mp4" type="video/mp4">
-					<source src="app/themes/mytheme/assets/videos/nines_trapper_of_the_year.webm" type="video/webm">
-					<source src="app/themes/mytheme/assets/videos/nines_trapper_of_the_year.ogg" type="video/ogg">
+					<source src="app/themes/thepenttheme/assets/videos/nines_trapper_of_the_year.mp4" type="video/mp4">
+					<source src="app/themes/thepenttheme/assets/videos/nines_trapper_of_the_year.webm" type="video/webm">
+					<source src="app/themes/thepenttheme/assets/videos/nines_trapper_of_the_year.ogg" type="video/ogg">
 				</video>
 			</div>
 		</div>
