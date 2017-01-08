@@ -16,6 +16,7 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
+  'lib/wp-video-post.php', // Video Custom Post Type Plugin
   'lib/wp_bootstrap_navwalker.php', // Bootstrap Nav Walker
 ];
 
@@ -71,8 +72,7 @@ function change_logo_class($html)
   return $html;
 }
 
-/* 
-  ======================================
+/* ======================================
         DYNAMIC COPYRIGHT DATE FUNC
   ======================================
 */
@@ -105,3 +105,5 @@ function comicpress_copyright() {
 */
 add_theme_support('post-thumbnails');
 add_theme_support('html5', array('search-form'));
+
+

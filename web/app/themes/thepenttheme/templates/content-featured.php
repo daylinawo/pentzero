@@ -1,7 +1,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div class="blog-post">
+    <div class="blog-item">
       
         <?php if(has_post_thumbnail() ){ 
               $perma = array(

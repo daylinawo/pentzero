@@ -1,10 +1,10 @@
-<?php 
-if(is_single()){
-		echo '<div class="widgets-area col-xs-12 col-sm-8" style="float: right;">';
-		dynamic_sidebar('sidebar-blog');
+<?php
+if ( is_single() ){
+		echo '<div id="posts-sidebar" class="widgets-area">';
+			  dynamic_sidebar('sidebar-latest');
+			  dynamic_sidebar('sidebar-recommend');
+			          related_posts();
+ 
 		echo '</div>';
-
-	}else{
-		dynamic_sidebar('sidebar-primary');
-	}
+}
 ?>
