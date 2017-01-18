@@ -1,0 +1,62 @@
+
+/*  =====================================================
+		2. MYTHEME HEADER, BANNER, NAVIGATION STYLES
+	=====================================================
+*/
+#top.active{
+		-webkit-box-shadow: 0px 2px 3px 0px rgba(158,158,158,0.55);
+		-moz-box-shadow: 0px 2px 3px 0px rgba(158,158,158,0.55);
+		box-shadow: 0px 2px 3px 0px rgba(158,158,158,0.55);
+		z-index:1000;
+		-webkit-backface-visibility: hidden !important;
+		-webkit-transform: translateZ(0) !important;		
+}
+.main-header{
+		background-color:#fff;
+		width:100%;
+		}
+.navbar{
+		margin: 0 !important;
+		}
+.navbar-default{
+		background-color:#000 !important;
+		border: 0 !important;
+		border-bottom: 1px solid #555 !important;
+		border-radius: 0px !important;
+		}
+.navbar-brand {
+		padding: 0 !important;
+		margin: 20px 30px 0px 10px !important;
+		}
+.navbar-nav{	
+		li{
+				text-align:center;
+				}
+		li a{
+				font-size:16px;
+				color: #fff !important;
+				background-color:#000;
+				text-transform: uppercase;
+				letter-spacing:4px;
+				display:block;
+		  		padding-top: 20px;
+  				padding-bottom: 20px;
+				}
+		li a:hover{
+				color: #000 !important;
+				background-color: #fff !important;
+				}
+		}
+
+.navbar-default .navbar-nav > .active,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+		color: #fff !important;
+		background-color: #000 !important;
+		}
+
+@media (min-width:768px){
+		/* ----VERTICALLY CENTERING TABLE ELEMENTS---- */
+
+	}
+

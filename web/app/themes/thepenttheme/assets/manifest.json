@@ -1,12 +1,14 @@
 {
   "dependencies": {
     "main.js": {
+      "bower": ["slick-carousel"],
       "files": [
         "scripts/main.js"
       ],
       "main": true
     },
     "main.css": {
+      "bower": ["slick-carousel"],
       "files": [
         "styles/main.scss"
       ],
@@ -15,6 +17,16 @@
     "fullwidth.js": {
       "files": [
         "scripts/fullwidth.js"
+      ]
+    },
+      "slick-transi.js": {
+      "files": [
+        "scripts/slick-transi.js"
+      ]
+    },
+    "scrollactive.js": {
+      "files": [
+        "scripts/scrollactive.js"
       ]
     },
     "customizer.js": {

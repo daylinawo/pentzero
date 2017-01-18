@@ -19,7 +19,24 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-      },
+       $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        autoplay: true,
+
+      });
+        },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
       }

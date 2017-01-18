@@ -19,8 +19,23 @@
              </div>
     
         <header>           
-          <?php the_title( sprintf('<h3 class="entry-header"><a href="%s">', esc_url(get_permalink() ) ),'</a></h3>'); ?>
-          <p><time class="updated"  datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time></p>
+           <?php 
+            /* $the_post_type = get_post_type();
+
+            switch ($the_post_type){
+              case 'videos':
+                print 'This is a video!';
+                break;
+              case 'gallery':
+                print 'This is a gallery!';
+                break;
+              default: 
+                print 'nothing.';
+                break;
+            }
+             */?>
+           <?php the_title( sprintf('<h3 class="entry-header"><a href="%s">', esc_url(get_permalink() ) ),'</a></h3>'); ?>
+            <p><time class="updated"  datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time></p>
         </header>
 
     </div>

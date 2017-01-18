@@ -77,7 +77,7 @@
 		  		$paged = (get_query_var('page')) ? get_query_var('page') : 1;
 
 		  		$args = array(
-		  			'post_type'=>'videos',
+		  			'post_type'=> array('videos', 'gallery'),
 		  			'posts_per_page' => 8,
 		  			'paged' => $paged,
 		  			);

@@ -1,44 +1,39 @@
-<header id="top" class="header" role="banner">
-  
-  <div class="banner container">
-    <div class="row">
-      <div class="logo col-xs-12 col-sm-4 vcenter">
-            <? penttheme_the_custom_logo();?>
+<header id="top" class="main-header" role="banner">
+        <!-- <div class="search-bar-container col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-4">
+            <?php  get_search_form(); ?>
+        </div> -->  
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+            <? $custom_logo_id = get_theme_mod( 'custom_logo' ); ?>
+            <? $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
+            <? if ( has_custom_logo() ) {
+                  echo '<a href="" style="background-image: url('. esc_url( $logo[0] ) .'); width: 200px; height: 24px;"  class="navbar-brand"></a>';
+            } else {
+                  echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1>';
+            } ?> 
       </div>
-      <div class="search-bar-container col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-4 vcenter">
-          <?php  get_search_form(); ?>
+      <div id="navbar1" class="navbar-collapse collapse">
+         <?php
+            if (has_nav_menu('primary_navigation')) :
+              wp_nav_menu([
+               'theme_location' => 'primary_navigation',
+               'walker' => new wp_bootstrap_navwalker(),
+               'menu_class' => 'nav navbar-nav'
+                ]);
+            endif;
+            ?>   
+
       </div>
+      <!--/.nav-collapse -->
     </div>
-  </div>
-    
-<div class="container navbar navbar-default navbar-static-top ">  
-     <div class="row">
-        <div class="col-xs-12">
-
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-
-            <nav class="collapse navbar-collapse" role="navigation">
-              <div class="row">
-              <?php
-              if (has_nav_menu('primary_navigation')) :
-                wp_nav_menu([
-                 'theme_location' => 'primary_navigation',
-                 'walker' => new wp_bootstrap_navwalker(),
-                 'menu_class' => 'nav navbar-nav'
-                  ]);
-              endif;
-              ?>   
-              </div>          
-            </nav>
-            
-        </div>
-      </div>
-</div> 
+    <!--/.container-fluid -->
+  </nav>
 </header>

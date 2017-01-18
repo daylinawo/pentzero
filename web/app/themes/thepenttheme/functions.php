@@ -16,7 +16,7 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
-  'lib/wp-video-post.php', // Video Custom Post Type Plugin
+  'lib/wp-pent-cpt.php', // Custom Post Type Plugin
   'lib/wp_bootstrap_navwalker.php', // Bootstrap Nav Walker
 ];
 
@@ -68,7 +68,7 @@ add_filter('get_custom_logo','change_logo_class');
 
 function change_logo_class($html)
 {
-  $html = str_replace('class="custom-logo-link"', 'class="custom-logo-link vert"', $html);
+  $html = str_replace('class="custom-logo-link"', 'class="custom-logo-link navbar-brand"', $html);
   return $html;
 }
 
@@ -97,13 +97,5 @@ function comicpress_copyright() {
     }
     return $output;
 }
-
-/* 
-  =================================
-        THEME SUPPORT FUNCTION
-  =================================
-*/
-add_theme_support('post-thumbnails');
-add_theme_support('html5', array('search-form'));
 
 

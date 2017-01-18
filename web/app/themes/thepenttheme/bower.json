@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "3.3.6"
+    "bootstrap-sass": "3.3.6",
+    "slick-carousel": "^1.6.0"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -31,6 +32,14 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
+    },
+   "slick-carousel": {
+      "main": [
+        "./slick/slick.min.js",
+        "./slick/slick.css",
+        "./slick/slick-theme.css",
+        "./slick/fonts/*"
+      ]
     }
-  }
+  } 
 }

@@ -4,8 +4,8 @@
         
           <div class="left-panel col-xs-12 col-sm-8">
             <article <?php post_class(); ?>>
-                <header class="sub" style="background: transparent !important; border-bottom: 20px !important;">
-                    <h2 style="font-size: 20px;"><?php the_title(); ?></h2>
+                <header style="background: transparent !important; border-bottom: 20px !important;">
+                    <h2><?php the_title(); ?></h2>
                 </header>
               
                 <?php $video = get_field('video'); ?>

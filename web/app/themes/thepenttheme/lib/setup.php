@@ -35,7 +35,11 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
-
+    if ( function_exists( 'add_image_size' )) 
+    {
+      add_image_size( 'yarpp-thumbnail', 150, 100);
+    }
+  
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
   add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
@@ -67,7 +71,7 @@ function widgets_init() {
     'id'            => 'sidebar-latest',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="psb-head">',
     'after_title'   => '</h3>'
   ]);
   register_sidebar([
@@ -75,20 +79,12 @@ function widgets_init() {
     'id'            => 'sidebar-recommend',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
+    'before_title'  => '<h3 class="psb-head">',
     'after_title'   => '</h3>'
   ]);
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ]);
-  register_sidebar([
-    'name'          => __('Blog Sidebar', 'sage'),
-    'id'            => 'sidebar-blog',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
@@ -127,7 +123,10 @@ function assets() {
   if(is_front_page() ){
     wp_enqueue_script('sage/fullwidth_js', Assets\asset_path('scripts/fullwidth.js'), ['sage/js'], null, true);
   }
+  wp_enqueue_script('sage/scrollactive_js', Assets\asset_path('scripts/scrollactive.js'), ['sage/js'], null, true);
+  wp_enqueue_script('sage/slicktransi_js', Assets\asset_path('scripts/slick-transi.js'), ['sage/js'], null, true);
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+
 }
 
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
