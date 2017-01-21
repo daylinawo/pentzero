@@ -93,6 +93,9 @@
 html, body {
 		height: 100%;
 		}
+html{
+	padding-top: 280px;
+}
 body{
 		font-family: $font-stack;
 		}	
@@ -246,7 +249,20 @@ h2{
 			right: 15px !important;
 			}
 /*  ==================================
-		3c. HOME POSTS LIST STYLE
+		3c. COMMON POST STYLES
+	==================================
+*/
+.entry-header{
+		font-size:	15px;	
+		a{
+			font-weight: bold;
+			}
+		}
+p time{
+		font-size: 11px;
+		}
+/*  ==================================
+		3d. HOME POSTS LIST STYLE
 	==================================
 */
 header.sub{
@@ -341,21 +357,13 @@ a.page-numbers:hover{
 		text-decoration: none;
 		background-color: $primary-color;
 		color: #fff !important;
-		}	
-article header .entry-header{
-		font-size:	15px;	
-		a{
-			color: $primary-color;
-			font-weight: bold;
-			}
-		}
-p time{
-		font-size: 11px;
-		}
-
-/*  ======================================
-		3d. RECOMMENDED POSTS STYLE
-	======================================
+		}			
+.l-p-info .entry-header a{
+		color: $primary-color;
+}
+/*  ============================================
+		3e. SIDEBAR RECOMMENDED POSTS STYLE
+	============================================
 */
 .psb-head{
 		margin-bottom: 20px;

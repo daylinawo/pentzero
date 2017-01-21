@@ -1,4 +1,11 @@
-<form role="search" class="vert" method="get" action="<?php echo home_url('/');?>">
-	<input type="search" class="form-control" placeholder="Search" value="<?php echo get_search_query(); ?>"
-	name="s" title="Search" />
+<form role="form" action="<?php bloginfo('url'); ?>/" id="searchform" class="navbar-form" method="get">
+    <label for="s" class="sr-only">Search</label>
+   <div class="media-body"> 
+	   <div class="input-group">
+	        <input type="text" class="form-control" id="s" name="s" placeholder="Search"<?php if( isset($search_terms) ){ if ( $search_terms !== '' ) { echo ' value="' . $search_terms . '"'; }} ?> />
+	        <span class="input-group-btn">
+	            <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+	        </span>
+	    </div> <!-- .input-group -->
+	</div>
 </form>
