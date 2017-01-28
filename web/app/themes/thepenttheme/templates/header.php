@@ -1,10 +1,10 @@
 
 <header class="m-header" role="banner">
 
-<div class="l-container l-c-style" style="height:220px; width:100%; background-color:#000;">
+<div class="l-container l-c-style" style="height:72px; width:100%; background-color:#000;">
   <div class="l-space">
-      <div class="l-block" style="height:200px; width:500px; display: inline-block;">
-            <img  src="/app/uploads/2017/01/pent-logo-w-e1484932133660.png" alt="logo" />
+      <div class="l-block" style="height:72px; width:300px; display: inline-block;">
+
       </div>
   </div>
 </div>
@@ -21,7 +21,7 @@
             <? $custom_logo_id = get_theme_mod( 'custom_logo' ); ?>
             <? $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
             <? if ( has_custom_logo() ) {
-                  echo '<a href="" style="background-image: url('. esc_url( $logo[0] ) .'); width: 250px; height: 30px;"  class="navbar-brand"></a>';
+                  echo '<a href="" class="navbar-brand"><img src="'.esc_url( $logo[0] ).'" alt="Pentzero logo" ></a>';
             } else {
                   echo '<h1>'. esc_attr( get_bloginfo( 'name' ) ) .'</h1>';
             } ?> 
@@ -46,13 +46,26 @@
     <!--/.container-fluid -->
   </nav>
 </header>
-<div class="spacer"></div>
-<section class="d-recommended m-hide">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="xs-col-12">
-              <h2><span class="d-r-box">Recommended</span> Posts</h3>
-                 <div class="r-list">
+
+<!-- LARGE FEATURED VIDEO -->
+ <div class="home-content large-featured-video container-fluid">
+    <div class="row">
+      <div id="video_container" class="video-container">
+        <video id="video">
+          <source src="/app/themes/thepenttheme/assets/videos/nines_trapper_of_the_year.mp4" type="video/mp4">
+          <source src="/app/themes/thepenttheme/assets/videos/nines_trapper_of_the_year.webm" type="video/webm">
+          <source src="/app/themes/thepenttheme/assets/videos/nines_trapper_of_the_year.ogg" type="video/ogg">
+        </video>
+      </div> 
+    </div>
+  </div>
+
+<!-- RECOMMENDED POSTS LIST -->
+<section id="recommended-posts" class="d-recommended m-hide">
+    <div class="container-fluid r-p-b">
+        <h2 class="default--hd" style="background-color: #000; color: #fff; border: 1px solid #292929;">Recommended Posts</h2>
+        <div class="row row-span">
+            <div class="col-xs-12">
                 <?php 
 
                 $args = array( 

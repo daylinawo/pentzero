@@ -3,6 +3,9 @@
 		2. MYTHEME HEADER, BANNER, NAVIGATION STYLES
 	=====================================================
 */
+
+/* ---- HEADER ADVERTISEMENT SPACE ---- */
+
 .m-header.active{
 		position: fixed;
 		top: 0;
@@ -49,6 +52,8 @@
 	transform: translateX(-50%);
 	width:100% !important;
 }
+
+/* ---- MAIN NAVIGATION ---- */
 .navbar{
 		margin: 0 !important;
 		z-index: 4;
@@ -56,18 +61,23 @@
 .navbar-default{
 		background-color:#000 !important;
 		border: 0 !important;
-		border-bottom: 1px solid #555 !important;
-		border-top: 1px solid #555 !important;
 		border-radius: 0px !important;
+		border-bottom: 1px solid #333 !important;
+		border-top: 1px solid #333 !important;
+		padding-left:15px;
 		}
 .navbar-brand {
 		padding: 0 !important;
-		margin: 15px 30px 0 10px !important;
+		margin: 0px 40px 0 0 !important;
 		}
 .navbar-nav{	
 		li{
 				text-align:center;
+				border-right: 1px solid #333;
 				}
+		li:first-child{
+				border-left: 1px solid #333;
+		}
 		li a{
 				font-size:16px;
 				color: #fff !important;
@@ -108,37 +118,50 @@
 				}	
 		.navbar-nav li > ul li{
 				width:100%;
+				border-top: 1px solid #333;
+				border-bottom: 1px solid #333;
 				}
 		.navbar-nav li:hover > ul{
 				display:block;
 				}
 	}
+.btn-primary{
+	background-color:#000 !important;
+	border-color:#333 !important;
+}
+.form-control, .btn{
+	border-radius: 0 !important;
+}
 /* ---- MAIN RECOMMENDED POSTS ---- */
 
 .d-recommended{
-		background-color:#111;
-		padding: 15px 15px 0 15px;
+		margin-bottom: 10px;
+		border-top: 1px solid #313131;
+		background-color: #111;
 		}
-.d-recommended h2{
-	margin:0px 0 0 25px;
-	color:#777 !important; 
-	font-size:22px;
-}
-.d-r-box{
-	background-color:#888;
-	padding:0 5px;
-}
-.r-list{
-		padding: 20px 0 0 10px;
+.r-p-b{
+		padding: 30px 20px 0 20px;
 		}
-.m-r-info .entry-header a{
-		color: #fff;
+.row-span{
+		margin: 20px 0;
+		background-color:#000;
+		padding: 10px;
+		border: 1px solid #292929
+		}
+#recommended-posts .blog-item{
+		margin-bottom: 10% !important;
+		}
+.info{
+	padding-top: 10px;
+}
+.info .entry-header a{
+		color: #d6d6d6;
 		}	
-.m-r-info time{
+.info time{
 		color:#888;
 		}
 .thumbnail-img{
-		border: solid 1px #333;
+
 		}
 @media (min-width:0px) and (max-width:767px) {
 		.m-hide{

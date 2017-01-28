@@ -94,10 +94,11 @@ html, body {
 		height: 100%;
 		}
 html{
-	padding-top: 280px;
+	padding-top: 134px;
 }
 body{
 		font-family: $font-stack;
+		background-color:#f5f5f5;
 		}	
 .wrap{
 		min-height:100%;
@@ -128,18 +129,29 @@ body:before {
 .search-bar-container input[type="search"]{
 		height:28px;
 		}
+.col{
+  padding-right:5px !important;
+  padding-left:5px !important;
+}
 /*  ===============================
 		0e. HEADINGS STYLES
 	===============================
 */
 h1, h2, h3, h4, h5, h6{
 		margin:0;
-		color: $primary-color;
 		}
 h2{
 		font-size:22px;
 		text-transform: uppercase;
 		}
+.default--hd{
+	width: 30%;
+	margin:auto !important;
+	font-size:22px !important;
+	padding: 15px;
+	text-align:center;
+	margin-bottom: 15px;
+}
 /*  ===============================
 		1 SETUP MEDIA QUERIES 
 	===============================
@@ -252,6 +264,11 @@ h2{
 		3c. COMMON POST STYLES
 	==================================
 */
+.half--wrap{
+	background-color:#fff;
+	padding-top:10px;
+	margin-top: 40px;
+}
 .entry-header{
 		font-size:	15px;	
 		a{
@@ -265,39 +282,24 @@ p time{
 		3d. HOME POSTS LIST STYLE
 	==================================
 */
-header.sub{
-		margin:8px 0;
-		padding: 8px 10px;
-		min-width: 100%;
-		background-color: #000;
-		@include border-radius(12px);
-		}
-header.sub h1, header.sub h2{
-			text-align: center;
-		}
 
 /* ===== FEATURED VIDEOS STYLE ===== */
 .video-box{
-		min-width:100%;
 		background-color: #000;
-		padding:15px 0;
-		margin: 0 10px 2px 0;
-		@include border-top-radius(12px);
+		margin-bottom:10px;
 		}
-@media (max-width: 767px){
-		.video-box{
-				padding-bottom: 0;
-				}
-		.video-box .video{
-				padding-bottom:20px;
-				}
-		}
+
 @media (min-width:768px){
-		.video-box .video{
-				padding-right:0 !important;
-				padding-left:0 !important;
+				.video-box{
+						padding: 5px;
+						}
+				.video-box:first-child{
+						padding-right: 0px !important;
+						}
+				.video-box:last-child{
+						padding-left: 0px !important;
+						}
 				}
-		}
 /* ===== LATEST UPDATES STYLE ===== */
 .thumbnail-img{
 		height:0;
@@ -324,17 +326,18 @@ header.sub h1, header.sub h2{
 #latest-updates div.push-down div:nth-child(3n+2).col-sm-4 {
 		padding: 0 10px 0 8px;
 		}
-.blog-item{
-		margin-bottom: 10% !important;
+
+#latest-updates .blog-item{
+		overflow:hidden;
+		margin-bottom: 10%;
 		}
 .recent-posts .blog-item{
-		height: 230px;
+		height: 240px;
 		}
 .older-posts .blog-item{
 		height: 170px;
 		}
 .blog-item h3{
-		margin:8px 0 0 0;
 		}
 #pagination{
 		padding: 10px 0;
@@ -357,10 +360,19 @@ a.page-numbers:hover{
 		text-decoration: none;
 		background-color: $primary-color;
 		color: #fff !important;
-		}			
+		}
+.l-p-info{
+			background-color:#2f2f2f;
+			padding: 5px 10px 10px 10px;
+			height: 80px;
+}			
 .l-p-info .entry-header a{
+		color: #fff;
+}
+.l-p-info p time{
 		color: $primary-color;
 }
+
 /*  ============================================
 		3e. SIDEBAR RECOMMENDED POSTS STYLE
 	============================================

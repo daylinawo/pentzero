@@ -1,31 +1,19 @@
-	<div class="home-content large-featured-video container-fluid">
-		<div class="row">
-			<div id="video_container" class="video-container">
-				<video id="video">
-					<source src="/app/themes/thepenttheme/assets/videos/nines_trapper_of_the_year.mp4" type="video/mp4">
-					<source src="/app/themes/thepenttheme/assets/videos/nines_trapper_of_the_year.webm" type="video/webm">
-					<source src="/app/themes/thepenttheme/assets/videos/nines_trapper_of_the_year.ogg" type="video/ogg">
-				</video>
-			</div>
-		</div>
-	</div>
-<!-- BODE WAS ERE 2016 -->
-	<!-- BEGIN FEATURED VIDEOS SECTION -->
-	<section class="home-content featured-videos container">
+<section class="half--wrap container-fluid">
+	<section class="home-content featured-videos"> 	<!-- BEGIN FEATURED VIDEOS SECTION -->
 
 			<header class="sub">
-					<h2>Featured Videos</h2>
+					<h2 class="default--hd" style="background-color: #000; color: #eeb781; border: 1px solid #292929;">Featured Videos</h2>
 			</header>
-			<div class="video-box row">
+			<div class="row">
 				<!-- VID 1 -->
-				<div class="video col-sm-6">
-					<div class="embed-responsive embed-responsive-16by9">
+				<div class="video-box col-xs-12 col-xs-0 col-sm-5 col-sm-offset-1">
+					<div class="video embed-responsive embed-responsive-16by9">
 						<iframe src="https://www.youtube.com/embed/HzvzxytPUzg?rel=0&amp;showinfo=0"  allowfullscreen></iframe>
 					</div>
 				</div>
 				<!-- VID 2 -->
-				<div class="video col-sm-6">
-					<div class="embed-responsive embed-responsive-16by9">
+				<div class="video-box col-xs-12 col-xs-0 col-xs-12 col-sm-5">
+					<div class="video embed-responsive embed-responsive-16by9">
 						<iframe src="https://www.youtube.com/embed/_wiN9AkyHpI?rel=0&amp;showinfo=0"  allowfullscreen></iframe>
 					</div>
 				</div>
@@ -34,7 +22,7 @@
 	<!-- END FEATURED VIDEOS SECTION -->
 
 	<!-- BEGIN CAROUSEL -->
-	<div id="carousel-pentzero" class=" carousel slide container" data-ride="carousel">
+	<div id="carousel-pentzero" class=" carousel slide" data-ride="carousel">
 
 	<div class="carousel-container">
 	 <!-- Wrapper for slides -->
@@ -122,5 +110,7 @@
 					wp_reset_postdata();
 		  		?>
 		</div>
-	</section>
-	<!-- END LATEST UPDATES SECTION -->
+	</section>	<!-- END LATEST UPDATES SECTION -->
+   <div class="clear"></div>
+</section>	<!-- END SECOND HALF WRAP -->
+

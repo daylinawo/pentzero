@@ -18,7 +18,7 @@
             ?>
              </div>
     
-        <header class="m-r-info">           
+        <header class="info">           
            <?php 
             /* $the_post_type = get_post_type();
 
