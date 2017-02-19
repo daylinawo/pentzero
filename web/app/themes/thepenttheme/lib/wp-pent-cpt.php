@@ -42,7 +42,8 @@ if(! defined( 'ABSPATH' )){
         'hierarchical' => false,
         'supports' => array(
             'title',
-            'thumbnail'
+            'thumbnail',
+            'comments'
           ),
         'taxonomies' => array('category', 'post_tag'),
         'menu_position' => 5,
@@ -78,7 +79,8 @@ if(! defined( 'ABSPATH' )){
         'hierarchical' => false,
         'supports' => array(
             'title',
-            'thumbnail'
+            'thumbnail',
+            'comments'
           ),
         'taxonomies' => array('category', 'post_tag'),
         'menu_position' => 6,

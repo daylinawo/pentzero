@@ -133,6 +133,9 @@ body:before {
   padding-right:5px !important;
   padding-left:5px !important;
 }
+.push{
+	margin-top: 40px;
+}
 /*  ===============================
 		0e. HEADINGS STYLES
 	===============================
@@ -147,10 +150,16 @@ h2{
 .default--hd{
 	width: 30%;
 	margin:auto !important;
+	margin-top: 30px !important;
 	font-size:22px !important;
 	padding: 15px;
 	text-align:center;
 	margin-bottom: 15px;
+}
+header.sub{
+	width:100%;
+	position: relative;
+	margin: 20px 0;
 }
 /*  ===============================
 		1 SETUP MEDIA QUERIES 
@@ -244,21 +253,10 @@ h2{
 */
 .carousel{
 		background-color: transparent !important;
+		width: 84.2%;
+		margin: auto;
 		}
 	.carousel-container{
-			padding:30px 0;
-			background-color: #000;
-			@include border-bottom-radius(12px);
-			}
-
-	.carousel-control.left, .carousel-control.right{
-			@include border-bottom-radius(12px);
-			}
-	.carousel-control.left{
-			left: 15px;
-			}
-	.carousel-control.right{
-			right: 15px !important;
 			}
 /*  ==================================
 		3c. COMMON POST STYLES
@@ -272,11 +270,11 @@ h2{
 .entry-header{
 		font-size:	15px;	
 		a{
-			font-weight: bold;
-			}
+				font-weight: bold;
+				}
 		}
 p time{
-		font-size: 11px;
+		font-size: 13px;
 		}
 /*  ==================================
 		3d. HOME POSTS LIST STYLE
@@ -308,7 +306,7 @@ p time{
     	position: relative;
 		}
 .thumbnail-img img{
-  	  position: absolute;
+  	  	position: absolute;
     	left: -1000%;
     	right: -1000%;
     	top: -1000%;
@@ -328,62 +326,61 @@ p time{
 		}
 
 #latest-updates .blog-item{
-		overflow:hidden;
 		margin-bottom: 10%;
-		}
-.recent-posts .blog-item{
-		height: 240px;
-		}
-.older-posts .blog-item{
-		height: 170px;
-		}
-.blog-item h3{
 		}
 #pagination{
 		padding: 10px 0;
 		margin: 10px 0;
+		border-top: 1px solid #bdbdbd;
 		}
 .page-numbers{
 		display:inline-block;
 		background-color: #fff;
 		padding: 5px 10px;
 		margin: 0 2px 0 0;
-		@include border-radius(10px);
-		border: 1px solid $primary-color;
 		color: $primary-color;
 		text-decoration: none;
-		font-size: 16px;
+		font-size: 20px;
 		font-weight: bold;
 		}
 .page-numbers.current,
 a.page-numbers:hover{
 		text-decoration: none;
-		background-color: $primary-color;
-		color: #fff !important;
+		color: #000 !important;
 		}
 .l-p-info{
-			background-color:#2f2f2f;
-			padding: 5px 10px 10px 10px;
-			height: 80px;
-}			
+		padding: 15px 0 0 0;
+		overflow: hidden;
+		}			
+.l-p-info .entry-header{
+		text-transform: uppercase;
+		}
+.blog-item .l-p-info h3{
+		font-size: 14px !important;
+		}
 .l-p-info .entry-header a{
-		color: #fff;
+		color: #000;
+		}
+.post-type {
+		color: #eeb781;
+		}
+.post-type--gallery{
+		color: #bbb;
+}
+.post-type::after{
+	content:"|";
+	margin-left: 5px;
+	color:#bdbdbd;
 }
 .l-p-info p time{
-		color: $primary-color;
-}
+		text-align: center;
+		color: #000;
+		}
 
 /*  ============================================
-		3e. SIDEBAR RECOMMENDED POSTS STYLE
+		4a. SIDEBAR RECOMMENDED POSTS STYLE
 	============================================
 */
-.psb-head{
-		margin-bottom: 20px;
-		}
-.description{
-		border-bottom: solid 1px #eee;
-		padding-bottom: 10px;
-		}	
 .yarpp-related-widget ol{
 		padding:0;
 		margin:0;
@@ -391,16 +388,16 @@ a.page-numbers:hover{
 .yarpp-related-widget ol li{
 		list-style:none;
 		display:block;
-		height:70px;
+		height:90px;
 		margin-bottom: 10px;
-		border-bottom: 1px solid #eee;
 		}
 .rp-title{
 		margin: 0;
-		font-size:16px;
+		font-size:14px;
 		}
 .yarpp-related-widget ol li h3 a{
-		color: $primary-color;
+		color: #000;
+		font-weight: 700;
 		}
 .yarpp-related-widget ol li h3 a:hover{
 		color: $secondary-color;
@@ -408,8 +405,8 @@ a.page-numbers:hover{
 		}
 .rpthumb{
 		float:left; 
-		width: 100px; 
-		height: 60px;
+		width: 140px; 
+		height: 80px;
 		overflow:hidden; 
 		margin: 0 10px 0 0;
 		position: relative;
@@ -426,7 +423,63 @@ a.page-numbers:hover{
 		}
 .yarpp-related-widget ol li time.updated{
 		color: #bbb;
+		font-size: 10px;
 		}
+/*  ============================================
+		4b. POST PAGE COMMON STYLE
+	============================================
+*/
+.kgvid_wrapper{
+	margin: 0 !important;
+}
+.post-page--container{
+		background-color: #fff;
+		padding:20px;
+		}
+.post-page--title h2{
+	font-size: 23px;
+	text-transform: uppercase;
+	width: 100%;
+	background-color:#fff;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+.description{
+		border-bottom: solid 1px #bdbdbd;
+		border-top: 6px solid #eeb781;
+		padding: 10px 0 10px 10px;
+		background-color:#f5f5f5;
+		}
+.post-info{
+	font-size: 12px;
+}	
+.psb-head{
+	text-transform: uppercase;
+	font-size: 17px;
+	padding: 10px;
+	text-align: center;
+	color: $primary-color;
+	border:1px solid #000;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.post-page--time{
+	font-weight: 700;
+	font-size: 14px;
+}
+.post-page--time::before{
+	content: "Posted on ";
+}
+.sub-bttn{
+	font-size: 18px;
+	color:#fff;
+	text-align: center;
+	background-color:#000;
+}
+/*  ============================================
+		4c. POST PAGE CAROUSEL
+	============================================
+*/
 .slick-slide{
     	overflow: hidden;
     	position: relative;

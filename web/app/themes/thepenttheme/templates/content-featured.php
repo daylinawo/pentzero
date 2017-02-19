@@ -18,24 +18,25 @@
             ?>
              </div>
     
-        <header class="l-p-info">           
-           <?php 
-            /* $the_post_type = get_post_type();
+        <header class="l-p-info">   
+        <h3 class="entry-header">         
+           <?php             
+               $the_post_type = get_post_type();
 
-            switch ($the_post_type){
-              case 'videos':
-                print 'This is a video!';
-                break;
-              case 'gallery':
-                print 'This is a gallery!';
-                break;
-              default: 
-                print 'nothing.';
-                break;
-            }
-             */?>
-           <?php the_title( sprintf('<h3 class="entry-header"><a href="%s">', esc_url(get_permalink() ) ),'</a></h3>'); ?>
-            <p><time  datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time></p>
+              switch ($the_post_type){
+                case 'videos':
+                  print '<span class="post-type glyphicon glyphicon-expand"></span>';
+                  break;
+                case 'gallery':
+                  print '<span class="post-type glyphicon glyphicon-camera"></span>';
+                  break;
+                default: 
+                  print 'nothing.';
+                  break;
+              }?>
+              <?php the_title( sprintf('<a href="%s">', esc_url(get_permalink() ) ),'</a>'); ?>
+            </h3>
+ 
         </header>
 
     </div>

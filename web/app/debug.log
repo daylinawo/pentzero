@@ -16425,3 +16425,428 @@ Stack trace:
 [19-Jan-2017 15:12:20 UTC] PHP   7. locate_template() /srv/www/pentzero.com/current/web/wp/wp-includes/general-template.php:167
 [19-Jan-2017 15:12:20 UTC] PHP   8. load_template() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:643
 [19-Jan-2017 15:12:20 UTC] PHP   9. require() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:686
+[29-Jan-2017 17:09:00 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/templates/content-featured.php on line 40
+[29-Jan-2017 17:09:06 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/templates/content-featured.php on line 40
+[30-Jan-2017 18:48:20 UTC] PHP Parse error:  syntax error, unexpected '<' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/templates/header.php on line 51
+[30-Jan-2017 18:48:39 UTC] PHP Parse error:  syntax error, unexpected '<' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/templates/header.php on line 51
+[30-Jan-2017 19:36:33 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[30-Jan-2017 19:36:33 UTC] PHP Stack trace:
+[30-Jan-2017 19:36:33 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[30-Jan-2017 19:36:33 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[30-Jan-2017 19:36:33 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[30-Jan-2017 19:36:33 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[30-Jan-2017 19:36:33 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[30-Jan-2017 19:36:33 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[30-Jan-2017 19:36:33 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[30-Jan-2017 19:36:33 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[30-Jan-2017 19:36:33 UTC] PHP Stack trace:
+[30-Jan-2017 19:36:33 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[30-Jan-2017 19:36:33 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[30-Jan-2017 19:36:33 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[30-Jan-2017 19:36:33 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[30-Jan-2017 19:36:33 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[30-Jan-2017 19:36:33 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[30-Jan-2017 19:36:33 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[30-Jan-2017 19:36:54 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[30-Jan-2017 19:36:54 UTC] PHP Stack trace:
+[30-Jan-2017 19:36:54 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[30-Jan-2017 19:36:54 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[30-Jan-2017 19:36:54 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[30-Jan-2017 19:36:54 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[30-Jan-2017 19:36:54 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[30-Jan-2017 19:36:54 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[30-Jan-2017 19:36:55 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[30-Jan-2017 19:36:55 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[30-Jan-2017 19:36:55 UTC] PHP Stack trace:
+[30-Jan-2017 19:36:55 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[30-Jan-2017 19:36:55 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[30-Jan-2017 19:36:55 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[30-Jan-2017 19:36:55 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[30-Jan-2017 19:36:55 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[30-Jan-2017 19:36:55 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[30-Jan-2017 19:36:55 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[30-Jan-2017 19:37:12 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[30-Jan-2017 19:37:12 UTC] PHP Stack trace:
+[30-Jan-2017 19:37:12 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[30-Jan-2017 19:37:12 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[30-Jan-2017 19:37:12 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[30-Jan-2017 19:37:12 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[30-Jan-2017 19:37:12 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[30-Jan-2017 19:37:12 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[30-Jan-2017 19:37:12 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[30-Jan-2017 19:37:12 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[30-Jan-2017 19:37:12 UTC] PHP Stack trace:
+[30-Jan-2017 19:37:12 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[30-Jan-2017 19:37:12 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[30-Jan-2017 19:37:12 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[30-Jan-2017 19:37:12 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[30-Jan-2017 19:37:12 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[30-Jan-2017 19:37:12 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[30-Jan-2017 19:37:12 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 03:56:29 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 03:56:29 UTC] PHP Stack trace:
+[31-Jan-2017 03:56:29 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 03:56:29 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 03:56:29 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 03:56:29 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 03:56:29 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 03:56:29 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 03:56:29 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 03:56:29 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 03:56:29 UTC] PHP Stack trace:
+[31-Jan-2017 03:56:29 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 03:56:29 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 03:56:30 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 03:56:30 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 03:56:30 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 03:56:30 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 03:56:30 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 03:58:35 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 03:58:35 UTC] PHP Stack trace:
+[31-Jan-2017 03:58:35 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 03:58:35 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 03:58:35 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 03:58:35 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 03:58:35 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 03:58:35 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 03:58:35 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 03:58:35 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 03:58:35 UTC] PHP Stack trace:
+[31-Jan-2017 03:58:35 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 03:58:35 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 03:58:35 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 03:58:35 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 03:58:35 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 03:58:35 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 03:58:35 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 03:59:31 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 03:59:31 UTC] PHP Stack trace:
+[31-Jan-2017 03:59:31 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 03:59:31 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 03:59:31 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 03:59:31 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 03:59:31 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 03:59:31 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 03:59:31 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 03:59:31 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 03:59:32 UTC] PHP Stack trace:
+[31-Jan-2017 03:59:32 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 03:59:32 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 03:59:32 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 03:59:32 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 03:59:32 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 03:59:32 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 03:59:32 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:01:08 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:01:08 UTC] PHP Stack trace:
+[31-Jan-2017 04:01:08 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:01:08 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:01:08 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:01:08 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:01:08 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:01:08 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:01:08 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:01:08 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:01:08 UTC] PHP Stack trace:
+[31-Jan-2017 04:01:08 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:01:08 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:01:09 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:01:09 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:01:09 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:01:09 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:01:09 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:01:22 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:01:22 UTC] PHP Stack trace:
+[31-Jan-2017 04:01:22 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:01:22 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:01:22 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:01:22 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:01:22 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:01:22 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:01:22 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:01:22 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:01:22 UTC] PHP Stack trace:
+[31-Jan-2017 04:01:22 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:01:22 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:01:22 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:01:22 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:01:22 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:01:22 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:01:22 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:02:18 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:02:18 UTC] PHP Stack trace:
+[31-Jan-2017 04:02:18 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:02:18 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:02:18 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:02:18 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:02:18 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:02:18 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:02:18 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:02:18 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:02:18 UTC] PHP Stack trace:
+[31-Jan-2017 04:02:18 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:02:18 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:02:18 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:02:18 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:02:18 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:02:18 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:02:18 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:02:39 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:02:39 UTC] PHP Stack trace:
+[31-Jan-2017 04:02:39 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:02:39 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:02:39 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:02:39 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:02:39 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:02:39 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:02:39 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:02:39 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:02:39 UTC] PHP Stack trace:
+[31-Jan-2017 04:02:39 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:02:39 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:02:39 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:02:39 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:02:39 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:02:39 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:02:39 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:03:04 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:03:04 UTC] PHP Stack trace:
+[31-Jan-2017 04:03:04 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:03:04 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:03:04 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:03:04 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:03:04 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:03:04 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:03:04 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:03:04 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:03:04 UTC] PHP Stack trace:
+[31-Jan-2017 04:03:04 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:03:04 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:03:04 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:03:04 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:03:04 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:03:04 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:03:04 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:03:04 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:03:04 UTC] PHP Stack trace:
+[31-Jan-2017 04:03:04 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:03:04 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:03:04 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:03:04 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:03:04 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:03:04 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:03:04 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:03:04 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:03:04 UTC] PHP Stack trace:
+[31-Jan-2017 04:03:04 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:03:04 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:03:04 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:03:04 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:03:04 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:03:04 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:03:04 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:04:56 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:04:56 UTC] PHP Stack trace:
+[31-Jan-2017 04:04:56 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:04:56 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:04:56 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:04:56 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:04:56 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:04:56 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:04:56 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:04:56 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:04:56 UTC] PHP Stack trace:
+[31-Jan-2017 04:04:56 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:04:56 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:04:56 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:04:56 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:04:56 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:04:56 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:04:56 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:12:59 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:12:59 UTC] PHP Stack trace:
+[31-Jan-2017 04:12:59 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:12:59 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:12:59 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:12:59 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:12:59 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:12:59 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:12:59 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:12:59 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:12:59 UTC] PHP Stack trace:
+[31-Jan-2017 04:12:59 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:12:59 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:12:59 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:12:59 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:12:59 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:12:59 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:13:00 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:14:20 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:14:20 UTC] PHP Stack trace:
+[31-Jan-2017 04:14:20 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:14:20 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:14:20 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:14:20 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:14:20 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:14:20 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:14:20 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:14:20 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:14:20 UTC] PHP Stack trace:
+[31-Jan-2017 04:14:20 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:14:20 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:14:20 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:14:20 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:14:20 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:14:20 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:14:20 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:27:46 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:27:46 UTC] PHP Stack trace:
+[31-Jan-2017 04:27:46 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:27:46 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:27:46 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:27:46 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:27:46 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:27:46 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:27:46 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:27:46 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:27:46 UTC] PHP Stack trace:
+[31-Jan-2017 04:27:46 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:27:46 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:27:46 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:27:46 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:27:46 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:27:46 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:27:46 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:39:39 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 04:39:39 UTC] PHP Stack trace:
+[31-Jan-2017 04:39:39 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:39:39 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:39:39 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:39:39 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:39:39 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:39:39 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:39:40 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 04:39:40 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 04:39:40 UTC] PHP Stack trace:
+[31-Jan-2017 04:39:40 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 04:39:40 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 04:39:40 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 04:39:40 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 04:39:40 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 04:39:40 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 04:39:40 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 11:27:00 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 11:27:00 UTC] PHP Stack trace:
+[31-Jan-2017 11:27:00 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 11:27:00 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 11:27:00 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 11:27:00 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 11:27:00 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 11:27:00 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 11:27:00 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 11:27:00 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 11:27:00 UTC] PHP Stack trace:
+[31-Jan-2017 11:27:00 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 11:27:00 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 11:27:00 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 11:27:00 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 11:27:00 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 11:27:00 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 11:27:00 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 11:29:23 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 11:29:23 UTC] PHP Stack trace:
+[31-Jan-2017 11:29:23 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 11:29:23 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 11:29:23 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 11:29:23 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 11:29:23 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 11:29:23 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 11:29:23 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 11:29:23 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 11:29:23 UTC] PHP Stack trace:
+[31-Jan-2017 11:29:23 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 11:29:23 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 11:29:23 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 11:29:23 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 11:29:23 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 11:29:23 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 11:29:23 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 11:30:11 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[31-Jan-2017 11:30:11 UTC] PHP Stack trace:
+[31-Jan-2017 11:30:11 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 11:30:11 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 11:30:11 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 11:30:11 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 11:30:11 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 11:30:11 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 11:30:11 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[31-Jan-2017 11:30:11 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[31-Jan-2017 11:30:11 UTC] PHP Stack trace:
+[31-Jan-2017 11:30:11 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[31-Jan-2017 11:30:11 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[31-Jan-2017 11:30:11 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[31-Jan-2017 11:30:11 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[31-Jan-2017 11:30:11 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[31-Jan-2017 11:30:11 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[31-Jan-2017 11:30:11 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[08-Feb-2017 00:19:51 UTC] PHP Notice:  Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /srv/www/pentzero.com/current/web/wp/wp-includes/functions.php on line 3914
+[08-Feb-2017 00:19:51 UTC] PHP Stack trace:
+[08-Feb-2017 00:19:51 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[08-Feb-2017 00:19:51 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[08-Feb-2017 00:19:51 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[08-Feb-2017 00:19:51 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[08-Feb-2017 00:19:51 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[08-Feb-2017 00:19:51 UTC] PHP   6. get_template_part() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/single.php:4
+[08-Feb-2017 00:19:51 UTC] PHP   7. locate_template() /srv/www/pentzero.com/current/web/wp/wp-includes/general-template.php:167
+[08-Feb-2017 00:19:51 UTC] PHP   8. load_template() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:643
+[08-Feb-2017 00:19:51 UTC] PHP   9. require() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:686
+[08-Feb-2017 00:19:51 UTC] PHP  10. get_sidebar() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/templates/content-single.php:21
+[08-Feb-2017 00:19:51 UTC] PHP  11. locate_template() /srv/www/pentzero.com/current/web/wp/wp-includes/general-template.php:122
+[08-Feb-2017 00:19:51 UTC] PHP  12. load_template() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:643
+[08-Feb-2017 00:19:51 UTC] PHP  13. require_once() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:684
+[08-Feb-2017 00:19:51 UTC] PHP  14. _deprecated_file() /srv/www/pentzero.com/current/web/wp/wp-includes/theme-compat/sidebar.php:15
+[08-Feb-2017 00:19:51 UTC] PHP  15. trigger_error() /srv/www/pentzero.com/current/web/wp/wp-includes/functions.php:3914
+[08-Feb-2017 00:29:06 UTC] PHP Parse error:  syntax error, unexpected ''init','pent_custom_post_type'' (T_ENCAPSED_AND_WHITESPACE) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/lib/wp-pent-cpt.php on line 95
+[08-Feb-2017 00:40:35 UTC] PHP Notice:  Theme without sidebar.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a sidebar.php template in your theme. in /srv/www/pentzero.com/current/web/wp/wp-includes/functions.php on line 3914
+[08-Feb-2017 00:40:35 UTC] PHP Stack trace:
+[08-Feb-2017 00:40:35 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[08-Feb-2017 00:40:35 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[08-Feb-2017 00:40:35 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[08-Feb-2017 00:40:35 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[08-Feb-2017 00:40:35 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[08-Feb-2017 00:40:35 UTC] PHP   6. get_template_part() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/single.php:4
+[08-Feb-2017 00:40:35 UTC] PHP   7. locate_template() /srv/www/pentzero.com/current/web/wp/wp-includes/general-template.php:167
+[08-Feb-2017 00:40:35 UTC] PHP   8. load_template() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:643
+[08-Feb-2017 00:40:35 UTC] PHP   9. require() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:686
+[08-Feb-2017 00:40:35 UTC] PHP  10. get_sidebar() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/templates/content-single.php:21
+[08-Feb-2017 00:40:35 UTC] PHP  11. locate_template() /srv/www/pentzero.com/current/web/wp/wp-includes/general-template.php:122
+[08-Feb-2017 00:40:35 UTC] PHP  12. load_template() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:643
+[08-Feb-2017 00:40:35 UTC] PHP  13. require_once() /srv/www/pentzero.com/current/web/wp/wp-includes/template.php:684
+[08-Feb-2017 00:40:35 UTC] PHP  14. _deprecated_file() /srv/www/pentzero.com/current/web/wp/wp-includes/theme-compat/sidebar.php:15
+[08-Feb-2017 00:40:35 UTC] PHP  15. trigger_error() /srv/www/pentzero.com/current/web/wp/wp-includes/functions.php:3914
+[08-Feb-2017 01:00:02 UTC] PHP Notice:  Trying to get property of non-object in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[08-Feb-2017 01:00:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_thread() on null in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php:807
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(733): dsq_update_permalink(Object(WP_Post))
+#1 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(760): dsq_sync_post('127')
+#2 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(298): dsq_sync_forum()
+#3 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#4 /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#5 phar:///usr/bin/wp/php/commands/cron.php(284): do_action_ref_array('dsq_sync_forum', Array)
+#6 phar:///usr/bin/wp/php/commands/cron.php(255): Cron_Event_Command::run_event(Object(stdClass))
+#7 [internal function]: Cron_Event_Command->run(Array, Array)
+#8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[08-Feb-2017 22:15:34 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/pentzero.com/current/web/wp/wp-includes/update.php on line 129
+[18-Feb-2017 19:00:05 UTC] PHP Notice:  Trying to get property of non-object in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[18-Feb-2017 19:00:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_thread() on null in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php:807
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(733): dsq_update_permalink(Object(WP_Post))
+#1 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(760): dsq_sync_post('163')
+#2 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(298): dsq_sync_forum()
+#3 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#4 /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#5 phar:///usr/bin/wp/php/commands/cron.php(284): do_action_ref_array('dsq_sync_forum', Array)
+#6 phar:///usr/bin/wp/php/commands/cron.php(255): Cron_Event_Command::run_event(Object(stdClass))
+#7 [internal function]: Cron_Event_Command->run(Array, Array)
+#8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[18-Feb-2017 19:15:02 UTC] PHP Warning:  Creating default object from empty value in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 749

@@ -2,7 +2,7 @@
 	<section class="home-content featured-videos"> 	<!-- BEGIN FEATURED VIDEOS SECTION -->
 
 			<header class="sub">
-					<h2 class="default--hd" style="background-color: #000; color: #eeb781; border: 1px solid #292929;">Featured Videos</h2>
+					<h2 class="default--hd" style="background-color: #000; color: #eeb781; border: 1px solid #2c2c2c;">Featured Videos</h2>
 			</header>
 			<div class="row">
 				<!-- VID 1 -->
@@ -57,8 +57,13 @@
 	<section id="latest-updates" class="home-content container">
 
 		<header class="sub">
-			<h2>Latest Updates</h2>
+				<div class="center-line--hd" style="position: absolute; top:30px; left:0; background-color:#bdbdbd; width:100%; height: 1px; z-index:0;"></div>
+					<h2 class="default--hd" style="background-color: #eeb781; color: #fff; border-bottom: 0px; position: relative; z-index:1;">Latest Updates</h2>
 		</header>
+			<div class="post-date--hd" style="position: relative; width:100%;">
+				<div class="center-line--hd" style="position: absolute; top:10px; left:25%; background-color:#bdbdbd; width:50%; height: 1px; z-index:0;"></div>
+				<h3 style="text-align: center; margin:0 auto 15px auto; width:27%; font-size: 23px !important; padding-bottom:20px; position: relative; background-color:#fff;">Thursday, 6th February</h3>
+			</div>
 
 		<div class="row">
 		  	<?php
@@ -66,7 +71,7 @@
 
 		  		$args = array(
 		  			'post_type'=> array('videos', 'gallery'),
-		  			'posts_per_page' => 8,
+		  			'posts_per_page' => 14,
 		  			'paged' => $paged,
 		  			);
 
@@ -80,12 +85,12 @@
 		  			if($postsQuery->have_posts() ): $i = 0;
 		  				while($postsQuery->have_posts() ): $postsQuery->the_post(); ?>
 			  				<?php
-				  				if($i <= 5): $column = 4; $class = "recent-posts"; 
-				  				else: $column = 3; $class = "older-posts";
+				  				if($i <= 5): $column = 4; $class = "most-recent"; 
+				  				else: $column = 3; $class = "older";
 				  				endif
 			  				?>
 			  				<?php 
-				  				if($i == 6): echo "<div class=\"col-xs-12\" style=\"width:100%; height:3px; background-color:#000; margin:20px 0;\"></div>";
+				  				if($i == 6): echo "<div style=\"width: 80%; height:100px; background-color:#bbb; margin:0 auto 40px auto; clear:both;\"></div>";
 				  				endif 
 			  				?>
 							<div class="col-xs-6 col-sm-<?php echo $column; echo " ".$class; ?> ">
