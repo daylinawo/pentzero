@@ -36,7 +36,16 @@
                 ]);
             endif;
             ?> 
-        <div class="col-sm-3 col-md-3 navbar-right">
+
+        <div class="col-sm-3 col-md-3">
+        <ul class="social">
+            <li><a href="#" class="ic ic-facebook"></a><li>
+            <li><a href="#" class="ic ic-twitter"></a><li>
+            <li><a href="#" class="ic ic-youtube"></a><li>
+            <li><a href="#" class="ic ic-instagram"></a><li>
+          </ul>
+        </div>
+        <div class="col-sm-2 col-md-2 navbar-right">
             <?php  get_search_form(); ?>
         </div>
 

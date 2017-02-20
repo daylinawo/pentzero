@@ -16850,3 +16850,144 @@ Stack trace:
 #7 [internal function]: Cron_Event_Command->run(Array, Array)
 #8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
 [18-Feb-2017 19:15:02 UTC] PHP Warning:  Creating default object from empty value in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 749
+[19-Feb-2017 18:45:03 UTC] PHP Notice:  Trying to get property of non-object in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[19-Feb-2017 18:45:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_thread() on null in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php:807
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(733): dsq_update_permalink(Object(WP_Post))
+#1 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(760): dsq_sync_post('193')
+#2 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(298): dsq_sync_forum()
+#3 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#4 /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#5 phar:///usr/bin/wp/php/commands/cron.php(284): do_action_ref_array('dsq_sync_forum', Array)
+#6 phar:///usr/bin/wp/php/commands/cron.php(255): Cron_Event_Command::run_event(Object(stdClass))
+#7 [internal function]: Cron_Event_Command->run(Array, Array)
+#8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[19-Feb-2017 18:54:31 UTC] PHP Parse error:  syntax error, unexpected '500' (T_LNUMBER), expecting ',' or ';' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 97
+[19-Feb-2017 21:59:53 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[19-Feb-2017 21:59:54 UTC] PHP Stack trace:
+[19-Feb-2017 21:59:54 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[19-Feb-2017 21:59:54 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[19-Feb-2017 21:59:54 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[19-Feb-2017 21:59:54 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[19-Feb-2017 21:59:55 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[19-Feb-2017 21:59:55 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[19-Feb-2017 21:59:55 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[19-Feb-2017 21:59:55 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[19-Feb-2017 21:59:55 UTC] PHP Stack trace:
+[19-Feb-2017 21:59:55 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[19-Feb-2017 21:59:55 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[19-Feb-2017 21:59:55 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[19-Feb-2017 21:59:55 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[19-Feb-2017 21:59:55 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[19-Feb-2017 21:59:55 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[19-Feb-2017 21:59:56 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[19-Feb-2017 21:59:59 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[19-Feb-2017 21:59:59 UTC] PHP Stack trace:
+[19-Feb-2017 21:59:59 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[19-Feb-2017 22:00:00 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[19-Feb-2017 22:00:00 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[19-Feb-2017 22:00:00 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[19-Feb-2017 22:00:00 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[19-Feb-2017 22:00:00 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[19-Feb-2017 22:00:01 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[19-Feb-2017 22:00:01 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[19-Feb-2017 22:00:01 UTC] PHP Stack trace:
+[19-Feb-2017 22:00:01 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[19-Feb-2017 22:00:01 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[19-Feb-2017 22:00:01 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[19-Feb-2017 22:00:02 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[19-Feb-2017 22:00:02 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[19-Feb-2017 22:00:02 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[19-Feb-2017 22:00:02 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[19-Feb-2017 22:03:52 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[19-Feb-2017 22:03:52 UTC] PHP Stack trace:
+[19-Feb-2017 22:03:52 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[19-Feb-2017 22:03:52 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[19-Feb-2017 22:03:52 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[19-Feb-2017 22:03:52 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[19-Feb-2017 22:03:52 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[19-Feb-2017 22:03:52 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[19-Feb-2017 22:03:52 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[19-Feb-2017 22:03:52 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[19-Feb-2017 22:03:52 UTC] PHP Stack trace:
+[19-Feb-2017 22:03:52 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[19-Feb-2017 22:03:52 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[19-Feb-2017 22:03:52 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[19-Feb-2017 22:03:52 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[19-Feb-2017 22:03:52 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[19-Feb-2017 22:03:52 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[19-Feb-2017 22:03:52 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[19-Feb-2017 22:15:02 UTC] PHP Notice:  Trying to get property of non-object in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[19-Feb-2017 22:15:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_thread() on null in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php:807
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(733): dsq_update_permalink(Object(WP_Post))
+#1 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(760): dsq_sync_post('127')
+#2 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(298): dsq_sync_forum()
+#3 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#4 /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#5 phar:///usr/bin/wp/php/commands/cron.php(284): do_action_ref_array('dsq_sync_forum', Array)
+#6 phar:///usr/bin/wp/php/commands/cron.php(255): Cron_Event_Command::run_event(Object(stdClass))
+#7 [internal function]: Cron_Event_Command->run(Array, Array)
+#8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[19-Feb-2017 22:30:10 UTC] PHP Warning:  Creating default object from empty value in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 749
+[20-Feb-2017 00:34:49 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[20-Feb-2017 00:34:50 UTC] PHP Stack trace:
+[20-Feb-2017 00:34:50 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[20-Feb-2017 00:34:50 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[20-Feb-2017 00:34:50 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[20-Feb-2017 00:34:50 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[20-Feb-2017 00:34:51 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[20-Feb-2017 00:34:51 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[20-Feb-2017 00:34:51 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[20-Feb-2017 00:34:51 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[20-Feb-2017 00:34:51 UTC] PHP Stack trace:
+[20-Feb-2017 00:34:51 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[20-Feb-2017 00:34:52 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[20-Feb-2017 00:34:52 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[20-Feb-2017 00:34:52 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[20-Feb-2017 00:34:52 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[20-Feb-2017 00:34:52 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[20-Feb-2017 00:34:52 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[20-Feb-2017 00:45:02 UTC] PHP Notice:  Trying to get property of non-object in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[20-Feb-2017 00:45:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_thread() on null in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php:807
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(733): dsq_update_permalink(Object(WP_Post))
+#1 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(760): dsq_sync_post('127')
+#2 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(298): dsq_sync_forum()
+#3 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#4 /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#5 phar:///usr/bin/wp/php/commands/cron.php(284): do_action_ref_array('dsq_sync_forum', Array)
+#6 phar:///usr/bin/wp/php/commands/cron.php(255): Cron_Event_Command::run_event(Object(stdClass))
+#7 [internal function]: Cron_Event_Command->run(Array, Array)
+#8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[20-Feb-2017 00:48:28 UTC] PHP Notice:  Undefined index: cat in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 110
+[20-Feb-2017 00:48:28 UTC] PHP Stack trace:
+[20-Feb-2017 00:48:28 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[20-Feb-2017 00:48:28 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[20-Feb-2017 00:48:28 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[20-Feb-2017 00:48:28 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[20-Feb-2017 00:48:28 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[20-Feb-2017 00:48:28 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[20-Feb-2017 00:48:28 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[20-Feb-2017 00:48:28 UTC] PHP Notice:  Undefined index: tag in /srv/www/pentzero.com/current/web/app/plugins/recent-posts-widget-extended/classes/widget.php on line 111
+[20-Feb-2017 00:48:28 UTC] PHP Stack trace:
+[20-Feb-2017 00:48:28 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:0
+[20-Feb-2017 00:48:28 UTC] PHP   2. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin-ajax.php:91
+[20-Feb-2017 00:48:28 UTC] PHP   3. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[20-Feb-2017 00:48:28 UTC] PHP   4. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[20-Feb-2017 00:48:28 UTC] PHP   5. wp_ajax_save_widget() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[20-Feb-2017 00:48:28 UTC] PHP   6. WP_Widget->update_callback() /srv/www/pentzero.com/current/web/wp/wp-admin/includes/ajax-actions.php:1922
+[20-Feb-2017 00:48:28 UTC] PHP   7. Recent_Posts_Widget_Extended->update() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-widget.php:456
+[20-Feb-2017 01:00:03 UTC] PHP Warning:  Creating default object from empty value in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 749
+[20-Feb-2017 01:45:02 UTC] PHP Notice:  Trying to get property of non-object in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[20-Feb-2017 01:45:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_thread() on null in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php:807
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(733): dsq_update_permalink(Object(WP_Post))
+#1 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(760): dsq_sync_post('127')
+#2 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(298): dsq_sync_forum()
+#3 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#4 /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#5 phar:///usr/bin/wp/php/commands/cron.php(284): do_action_ref_array('dsq_sync_forum', Array)
+#6 phar:///usr/bin/wp/php/commands/cron.php(255): Cron_Event_Command::run_event(Object(stdClass))
+#7 [internal function]: Cron_Event_Command->run(Array, Array)
+#8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807

@@ -2,7 +2,8 @@
 	<section class="home-content featured-videos"> 	<!-- BEGIN FEATURED VIDEOS SECTION -->
 
 			<header class="sub">
-					<h2 class="default--hd" style="background-color: #000; color: #eeb781; border: 1px solid #2c2c2c;">Featured Videos</h2>
+				<div class="center-line--hd" style="position: absolute; top:30px; left:0; background-color:#bdbdbd; width:100%; height: 1px; z-index:0;"></div>
+					<h2 class="default--hd" style="background-color: #000; color: #eeb781; border: 1px solid #2c2c2c; position: relative; z-index:1;">Featured Videos</h2>
 			</header>
 			<div class="row">
 				<!-- VID 1 -->
@@ -38,6 +39,8 @@
 	   <!-- Indicators -->
 	 <ol class="carousel-indicators">
 	  <li data-target="#carousel-pentzero" data-slide-to="1" class="active"></li>
+	  <li data-target="#carousel-pentzero" data-slide-to="2"></li>
+
 	 </ol>
 	 </div>
 	 
@@ -61,11 +64,12 @@
 					<h2 class="default--hd" style="background-color: #eeb781; color: #fff; border-bottom: 0px; position: relative; z-index:1;">Latest Updates</h2>
 		</header>
 			<div class="post-date--hd" style="position: relative; width:100%;">
-				<div class="center-line--hd" style="position: absolute; top:10px; left:25%; background-color:#bdbdbd; width:50%; height: 1px; z-index:0;"></div>
-				<h3 style="text-align: center; margin:0 auto 15px auto; width:27%; font-size: 23px !important; padding-bottom:20px; position: relative; background-color:#fff;">Thursday, 6th February</h3>
+				<h3>
+					Monday, 6th February
+				</h3>
 			</div>
 
-		<div class="row">
+		<div class="row" style="padding:10px;">
 		  	<?php
 		  		$paged = (get_query_var('page')) ? get_query_var('page') : 1;
 
@@ -90,7 +94,17 @@
 				  				endif
 			  				?>
 			  				<?php 
-				  				if($i == 6): echo "<div style=\"width: 80%; height:100px; background-color:#bbb; margin:0 auto 40px auto; clear:both;\"></div>";
+				  				if($i == 6): echo "
+				  					<div class=\"clear\"></div>
+				  					<div style=\"width:100%; margin:10px auto 20px auto; clear:both; overflow: hidden; background-color:#000;\"><img src=\"/app/themes/thepenttheme/assets/images/pageadvert1.jpg\" width=\"90%\" style=\"margin:auto; display:block;\" /></div>
+										<div class=\"post-date--hd col-xs-12\" style=\"position: relative; width:100%;\">
+											<div class=\"center-line--hd\"></div>
+											<h3>
+												Sunday, 5th February
+												<span class=\"year\">2017</span>
+											</h3>
+											</div>
+				  				";
 				  				endif 
 			  				?>
 							<div class="col-xs-6 col-sm-<?php echo $column; echo " ".$class; ?> ">

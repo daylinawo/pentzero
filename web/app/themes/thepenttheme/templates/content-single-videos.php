@@ -13,7 +13,7 @@
                 <!-- <form method="post" action="">
                       <input type="button" name="submit" value="Click here to subscribe" style="width:100%; background-color:#000; color:#fff; border: 0 !important; text-transform: uppercase;">
                 </form> -->
-                <a href="#" style="background-color:#000; width:100%; color:#eeb781; display: block; padding:10px;"><span class="glyphicon glyphicon-plus-sign" style="padding-right:5px;"></span>Subscribe to Pentzero</a>
+                <a href="#" style="background-color:#fff; width:100%; color:#eeb781; font-weight:bold; text-align:center; text-transform: uppercase; display: block; padding:10px 0;"><span class="glyphicon glyphicon-plus-sign" style="padding-right:5px;"></span>Subscribe to Pentzero</a>
           </div>
      </div>
            <div class="row">        
@@ -38,7 +38,7 @@
             </article>
           </div> 
 
-          <div class="col-xs-12 col-sm-4">
+          <div class="col-xs-12 col-sm-4" style="background-color:#f5f5f5; padding:0;">
             
   
             <div>
