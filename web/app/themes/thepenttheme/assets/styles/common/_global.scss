@@ -46,7 +46,8 @@
 	===============================
 */
 	$footer-push: 50px;
-	$font-stack : 'DINNext', sans-serif !important;
+	$font-stack : 'Poppins', 'Montserrat' sans-serif !important;
+	$font-date: 'Oswald';
 	$primary-color: #EEB781 !important;
 	$secondary-color: #ce9d6f !important; 
 
@@ -79,13 +80,7 @@
     url("//db.onlinewebfonts.com/t/e72226517a8e28f6d824d5300c747448.svg#DINNextW06-Regular") format("svg");
     font-weight: bold;
 }
-@font-face {
-    font-family: 'onrampregular';
-    src: url('../fonts/onramp-webfont.woff2') format('woff2'),
-         url('../fonts/onramp-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 /*  ===============================
 		0d. DEFAULT STYLES
 	===============================
@@ -145,51 +140,39 @@ h1, h2, h3, h4, h5, h6{
 		}
 h2{
 		font-size:22px;
+		font-family: 'Poppins' !important;
+		font-weight: bold;
+		}
+.default--hd, .default--hd-no-line{
+		width: 30%;
+		margin: 0 auto;
+		font-size:22px !important;
+		text-align:center;
 		}
 .default--hd{
-	width: 30%;
-	margin:auto !important;
-	margin-top: 30px !important;
-	font-size:22px !important;
-	padding: 15px;
-	text-align:center;
-	margin-bottom: 15px;
+	
 }
-header.sub{
-	width:100%;
-	position: relative;
-	margin: 20px 0;
-}
-.social li{
-margin-top:20px;
-	float:left;
-	text-decoration: none;
-	list-style: none;
-}
-a.ic{
-	display:block;
-	background:url("/app/themes/thepenttheme/assets/images/social-icons.png");
-	height: 20px;
-	background-repeat: no-repeat;
-	margin-left:20px;
+.default--hd:before{
+		content: "";
+		position: absolute; 
+		top:30px; left:0; 
+		background-color:#bdbdbd; 
+		width:100%;
+		height: 1px;
+	    z-index:0;
+		}
+.default--hd span, .default--hd-no-line span{
+		padding: 30px;
+		display: block;
+		border-bottom: 0px; 
+		position: relative;
+		z-index:1;
+		}
 
-}
-a.ic-facebook{
-		background-position: 0px 0px;
-		width: 22px;
-}
-a.ic-twitter{
-		background-position: -22px 0px;
-		width: 29px;
-}
-a.ic-youtube{
-		background-position: -51px 0px;
-		width: 24px;
-}
-a.ic-instagram{
-		background-position: -75px 0px;
-		width: 27px;
-}
+header.sub{
+		width:100%;
+		position: relative;
+		}
 
 /*  ===============================
 		1 SETUP MEDIA QUERIES 
@@ -225,12 +208,12 @@ a.ic-instagram{
 */		
 @media (min-width:768px) and (max-width:992px) {
 		.container{
-			width:780px;
+			width:1180px;
 			}
 		}
 @media (min-width:768px){
 		.container{
-				max-width: 980px;
+				/* max-width: 980px; */
 				}
 		}
 /* 
@@ -239,6 +222,9 @@ a.ic-instagram{
 ------------------------------
  */
 @media (min-width:1200px){
+		.container{
+			width:1380px;
+			}
 		}
 
 /*  ====================================
@@ -293,15 +279,19 @@ a.ic-instagram{
 	==================================
 */
 .half--wrap{
-	background-color:transparent;
-	padding-top:10px;
-	margin-top: 40px;
+	background-color:#fff;
+}
+.alt--wrap{
+	background-color: #f5f5f5;
+	width:100%;
+	margin:30px 0;
+	padding: 15px 0;
 }
 .entry-header{
 		font-size:	15px;	
 		a{
 
-				}
+			}
 		}
 p time{
 		font-size: 13px;
@@ -329,22 +319,25 @@ p time{
 						}
 				}
 /* ===== LATEST UPDATES STYLE ===== */
+.post-date--hd{
+	margin:20px auto 0 auto;
+	width:100%;
+}
 .post-date--hd h3{
 	text-align: center; 
+	width: 100%;
 	font-size: 20px !important; 
 	color: #000;
-	width: 35%;
-	margin: 0 auto 10px auto; 
+	margin: 0 auto; 
 	padding: 5px; 
-	font-weight: bold;
+	font-weight: 200;
 	position:relative;
-	font-family:helvetica neue;
+	font-family:$font-date;
 	z-index: 1;
-	background-color: #fff;
-}
+		}
 .post-date--hd h3 span.year{
-	background-color:#fff;
-}
+		background-color:#fff;
+		}
 .center-line--hd{
 		position: absolute; 
 		top:18px; left:0; 
@@ -369,10 +362,6 @@ p time{
     	max-width:100%;
     	height:auto;
 		}
-#latest-updates{
-	background-color:#fff;
-	border:1px solid #bdbdbd;
-}
 #latest-updates div.push-down div:nth-child(3n+1).col-sm-4 {
 		padding-right: 3px;
 		}
@@ -382,7 +371,6 @@ p time{
 #latest-updates div.push-down div:nth-child(3n+2).col-sm-4 {
 		padding: 0 10px 0 8px;
 		}
-
 #latest-updates .blog-item{
 		margin-bottom: 10%;
 		}
@@ -412,6 +400,7 @@ a.page-numbers:hover{
 		}			
 .blog-item .l-p-info h3{
 		font-size: 14px !important;
+		text-align: center;
 		}
 .l-p-info .entry-header a{
 		color: #000;
@@ -424,12 +413,12 @@ a.page-numbers:hover{
 		}
 .post-type--gallery{
 		color: #bbb;
-}
+		}
 .post-type::after{
-	content:"|";
-	margin-left: 5px;
-	color:#bdbdbd;
-}
+		content:"|";
+		margin-left: 5px;
+		color:#bdbdbd;
+		}
 .l-p-info p time{
 		text-align: center;
 		color: #000;
@@ -485,7 +474,7 @@ a.page-numbers:hover{
 		font-size: 10px;
 		}
 /*  ============================================
-		4b. POST PAGE COMMON STYLE
+		4b. SINGLE POST COMMON STYLE
 	============================================
 */
 .kgvid_wrapper{
@@ -534,7 +523,7 @@ a.page-numbers:hover{
 	background-color:#000;
 }
 /*  ============================================
-		4c. POST PAGE CAROUSEL
+		4c. SINGLE POST CAROUSEL
 	============================================
 */
 .slick-slide{

@@ -16991,3 +16991,28 @@ Stack trace:
 #6 phar:///usr/bin/wp/php/commands/cron.php(255): Cron_Event_Command::run_event(Object(stdClass))
 #7 [internal function]: Cron_Event_Command->run(Array, Array)
 #8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[26-Feb-2017 12:00:40 UTC] PHP Parse error:  syntax error, unexpected ',' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/lib/setup.php on line 127
+[26-Feb-2017 13:00:41 UTC] PHP Warning:  Unexpected character in input:  ' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/lib/setup.php on line 134
+[26-Feb-2017 13:00:41 UTC] PHP Stack trace:
+[26-Feb-2017 13:00:41 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[26-Feb-2017 13:00:41 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[26-Feb-2017 13:00:41 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:13
+[26-Feb-2017 13:00:41 UTC] PHP   4. require_once() /srv/www/pentzero.com/current/web/wp/wp-load.php:42
+[26-Feb-2017 13:00:41 UTC] PHP   5. require_once() /srv/www/pentzero.com/current/web/wp-config.php:9
+[26-Feb-2017 13:00:41 UTC] PHP   6. include() /srv/www/pentzero.com/current/web/wp/wp-settings.php:425
+[26-Feb-2017 13:30:22 UTC] PHP Notice:  Trying to get property of non-object in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[26-Feb-2017 13:30:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_thread() on null in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php:807
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(733): dsq_update_permalink(Object(WP_Post))
+#1 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(760): dsq_sync_post('127')
+#2 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(298): dsq_sync_forum()
+#3 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#4 /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#5 phar:///usr/bin/wp/php/commands/cron.php(284): do_action_ref_array('dsq_sync_forum', Array)
+#6 phar:///usr/bin/wp/php/commands/cron.php(255): Cron_Event_Command::run_event(Object(stdClass))
+#7 [internal function]: Cron_Event_Command->run(Array, Array)
+#8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[26-Feb-2017 13:45:03 UTC] PHP Warning:  Creating default object from empty value in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 749
+[27-Feb-2017 05:15:03 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/pentzero.com/current/web/wp/wp-includes/update.php on line 129
+[27-Feb-2017 05:15:03 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/pentzero.com/current/web/wp/wp-includes/update.php on line 319
+[27-Feb-2017 05:15:03 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/pentzero.com/current/web/wp/wp-includes/update.php on line 499

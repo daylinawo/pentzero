@@ -14,9 +14,10 @@
 <!-- RECOMMENDED POSTS LIST -->
 <section id="recommended-posts" class="d-recommended m-hide">
     <div class="container-fluid r-p-b">
-        <h2 class="default--hd" style="background-color: #000; color: #fff; border: 1px solid #292929;">Recommended Posts</h2>
+        <h2 class="default--hd" style="margin-top: 0 !important;">
+          <span style="background-color: #000; color: #fff; border: 1px solid #292929;">Recommended Posts</span>
+          </h2>
         <div class="row row-span">
-            <div class="col-xs-12">
                 <?php 
 
                 $args = array( 
@@ -39,7 +40,6 @@
                    wp_reset_postdata();
 
                 ?>
-                </div>
             </div>
         </div>
     </div>

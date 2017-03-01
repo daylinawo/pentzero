@@ -38,7 +38,8 @@
     "wpackagist-plugin/video-embed-thumbnail-generator": "4.6.12",
     "wpackagist-plugin/recent-posts-widget-extended": "0.9.9.6",
     "wpackagist-plugin/yet-another-related-posts-plugin": "4.3.6",
-    "wpackagist-plugin/advanced-custom-fields": "4.4.11"
+    "wpackagist-plugin/advanced-custom-fields": "4.4.11",
+    "wpackagist-plugin/wp-video-lightbox": "1.8.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
