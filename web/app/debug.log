@@ -17016,3 +17016,95 @@ Stack trace:
 [27-Feb-2017 05:15:03 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/pentzero.com/current/web/wp/wp-includes/update.php on line 129
 [27-Feb-2017 05:15:03 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/pentzero.com/current/web/wp/wp-includes/update.php on line 319
 [27-Feb-2017 05:15:03 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/pentzero.com/current/web/wp/wp-includes/update.php on line 499
+[01-Mar-2017 23:32:51 UTC] PHP Notice:  Undefined index: autoplay_slideshow in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 119
+[01-Mar-2017 23:32:51 UTC] PHP Stack trace:
+[01-Mar-2017 23:32:51 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:32:51 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:32:51 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:32:51 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:32:51 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:32:51 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:32:51 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[01-Mar-2017 23:32:51 UTC] PHP Notice:  Undefined index: hideflash in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 129
+[01-Mar-2017 23:32:51 UTC] PHP Stack trace:
+[01-Mar-2017 23:32:51 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:32:51 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:32:51 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:32:51 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:32:51 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:32:51 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:32:51 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[01-Mar-2017 23:32:51 UTC] PHP Notice:  Undefined index: autoplay in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 131
+[01-Mar-2017 23:32:51 UTC] PHP Stack trace:
+[01-Mar-2017 23:32:51 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:32:51 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:32:51 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:32:51 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:32:51 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:32:51 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:32:51 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[01-Mar-2017 23:32:51 UTC] PHP Notice:  Undefined index: modal in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 132
+[01-Mar-2017 23:32:51 UTC] PHP Stack trace:
+[01-Mar-2017 23:32:51 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:32:51 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:32:51 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:32:51 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:32:51 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:32:51 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:32:51 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[01-Mar-2017 23:32:51 UTC] PHP Notice:  Undefined index: deeplinking in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 133
+[01-Mar-2017 23:32:51 UTC] PHP Stack trace:
+[01-Mar-2017 23:32:51 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:32:51 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:32:51 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:32:51 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:32:51 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:32:51 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:32:51 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[01-Mar-2017 23:35:03 UTC] PHP Notice:  Undefined index: autoplay_slideshow in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 119
+[01-Mar-2017 23:35:03 UTC] PHP Stack trace:
+[01-Mar-2017 23:35:03 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:35:03 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:35:03 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:35:03 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:35:03 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:35:03 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:35:03 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[01-Mar-2017 23:35:03 UTC] PHP Notice:  Undefined index: hideflash in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 129
+[01-Mar-2017 23:35:03 UTC] PHP Stack trace:
+[01-Mar-2017 23:35:03 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:35:03 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:35:03 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:35:03 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:35:03 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:35:03 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:35:03 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[01-Mar-2017 23:35:03 UTC] PHP Notice:  Undefined index: autoplay in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 131
+[01-Mar-2017 23:35:03 UTC] PHP Stack trace:
+[01-Mar-2017 23:35:03 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:35:03 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:35:03 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:35:03 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:35:03 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:35:03 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:35:03 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[01-Mar-2017 23:35:03 UTC] PHP Notice:  Undefined index: modal in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 132
+[01-Mar-2017 23:35:03 UTC] PHP Stack trace:
+[01-Mar-2017 23:35:03 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:35:03 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:35:03 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:35:03 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:35:03 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:35:03 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:35:03 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[01-Mar-2017 23:35:03 UTC] PHP Notice:  Undefined index: deeplinking in /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php on line 133
+[01-Mar-2017 23:35:03 UTC] PHP Stack trace:
+[01-Mar-2017 23:35:03 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:0
+[01-Mar-2017 23:35:03 UTC] PHP   2. require_once() /srv/www/pentzero.com/current/web/wp/wp-admin/options-general.php:10
+[01-Mar-2017 23:35:03 UTC] PHP   3. do_action() /srv/www/pentzero.com/current/web/wp/wp-admin/admin.php:222
+[01-Mar-2017 23:35:03 UTC] PHP   4. WP_Hook->do_action() /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php:453
+[01-Mar-2017 23:35:03 UTC] PHP   5. WP_Hook->apply_filters() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:323
+[01-Mar-2017 23:35:03 UTC] PHP   6. Video_Lightbox_Settings_Page->display_settings_page() /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php:298
+[01-Mar-2017 23:35:03 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
+[03-Mar-2017 19:30:43 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/pentzero.com/current/web/wp/wp-includes/update.php on line 499
+[05-Mar-2017 01:45:21 UTC] PHP Parse error:  syntax error, unexpected ''\\a' (T_ENCAPSED_AND_WHITESPACE) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/lib/setup.php on line 133

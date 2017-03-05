@@ -1,12 +1,12 @@
-<section class="half--wrap container-fluid" style="padding: 0 !important;">
+<section class="wrap--half" style="padding: 0 !important;">
 <!-- BEGIN CAROUSEL -->
 	<div id="carousel-pentzero" class=" carousel slide" data-ride="carousel">
 			<div class="carousel-container">
 			 <!-- Wrapper for slides -->
 			 <div class="carousel-inner">
 
-			<div class="item active" style=" max-height: 400px;">
-			<img style="min-width:100%; object-fit: cover; max-height:400px;" src="/app/uploads/2016/12/california-palms.jpg" alt="california-palms" />
+			<div class="item active" style=" max-height: 700px;">
+			<img style="min-width:100%; object-fit: cover; max-height:700px;" src="http://static3.businessinsider.com/image/5589a63669bedd6c56f6781f/5-habits-that-helped-turn-ordinary-people-into-self-made-millionaires.jpg" alt="california-palms" />
 			<div class="carousel-caption">
 			                <a href="#">Here is a little teaser.</a>
 			</div>
@@ -31,27 +31,40 @@
 	<!-- END CAROUSEL -->
 	
 	<!-- BEGIN FEATURED VIDEOS SECTION -->
-	<section class="home-content featured-videos">
-		<div class="alt--wrap">
-			<header class="sub">
-					<h2 class="default--hd-no-line">
-						<span style="background-color: #000; color: #eeb781; border: 1px solid #2c2c2c !important">Featured Videos</span>
-					</h2>
-			</header>
-			<div class="row">
-				<!-- VID 1 -->
-				<div class="video-box col-xs-12 col-xs-0 col-sm-5 col-sm-offset-1">
-					<div class="video embed-responsive embed-responsive-16by9">
+	<section id="featured-videos" class="home-content wrapper alt grey">
 
-						<?php echo do_shortcode("[video_lightbox_youtube video_id=\"HzvzxytPUzg\" width=\"640\" height=\"480\" anchor=\"http://i67.tinypic.com/f3ugyw.jpg\"]");?>
+				<div class="row inner-container">			
+					<div class="maxWidth">
+						<header class="sub">
+							<h2 class="default--hd-no-line">
+								<span style="background-color: #000; color: #eeb781; border: 1px solid #2c2c2c !important">Featured Videos</span>
+							</h2>
+						</header>
+					<!-- VID 1 -->
+					<div class="video-box col-xs-12 col-sm-6">
+						<div class="thumbnail-img">
+							<?php echo do_shortcode("[video_lightbox_youtube video_id=\"HzvzxytPUzg\" width=\"640\" height=\"480\" anchor=\"http://i65.tinypic.com/vevoes.jpg\"]");?>
+							<a rel="wp-video-lightbox" class="overlay" href="https://www.youtube.com/watch?v=HzvzxytPUzg&width=640&height=480">
+								<div class="cont">
+									<div class="title">
+										<h3>Money on my mind<small>Nines</small></h3>
+									</div>
+										<span class="glyphicon glyphicon-play"></span>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
-				<!-- VID 2 -->
-				<div class="video-box col-xs-12 col-xs-0 col-xs-12 col-sm-5">
-					<div class="video embed-responsive embed-responsive-16by9">
-						<iframe src="https://www.youtube.com/embed/_wiN9AkyHpI?rel=0&amp;showinfo=0"  allowfullscreen></iframe>
+					<!-- VID 2 -->
+					<div class="video-box col-xs-12 col-sm-6">
+						<div class="thumbnail-img">
+							<?php echo do_shortcode("[video_lightbox_youtube video_id=\"_wiN9AkyHpI\" width=\"640\" height=\"480\" anchor=\"http://i68.tinypic.com/2hrpob9.jpg\"]");?>
+							<a class="overlay">
+								<div class="title">
+									<h3>Champions Freestyle<small>Teyana Taylor</small></h3>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -60,18 +73,20 @@
 
 	<!-- BEGIN LATEST UPDATES SECTION -->
 	<section id="latest-updates" class="home-content">
-			<div class="container">
+			<div class="row inner-container">
+				<div class="maxWidth">
 					<header class="sub">
-					<h2 class="default--hd">
-						<span style="background-color: #eeb781; color: #fff;">Latest Updates</span>
-					</h2>
+						<h2 class="default--hd">
+							<span style="background-color: #eeb781; color: #fff;">Latest Updates</span>
+						</h2>
 					</header>
+			
 					<div class="post-date--hd" style="position: relative; width:100%;">
 						<h3>
 							Monday, 6th February <span class="year">2017</span>
 						</h3>
-=					</div>
-				<div class="row">
+					</div>
+
 		  	<?php
 		  		$paged = (get_query_var('page')) ? get_query_var('page') : 1;
 
@@ -99,23 +114,29 @@
 				  				if($i == 6): echo "
 				  					</div></div>
 				  					<div class=\"clear\"></div>
-				  							<div class=\"alt--wrap\">
-					  							<div class=\"container-fluid\" style=\"margin:10px auto 20px auto; clear:both; overflow: hidden; padding:0 !important;\">
-					  								<img src=\"/app/themes/thepenttheme/assets/images/pageadvert1.jpg\" width=\"100%\" style=\"margin:auto; display:block;\" />
-					  							</div>
+				  							
+				  							<div class=\"row\">
+				  								<div class=\"wrapper alt grey\">
+				  									<div class=\"maxWidth\">
+					  									<div class=\"ad strip\">
+					  										<img src=\"/app/themes/thepenttheme/assets/images/pageadvert1.jpg\" maxwidth=\"80%\" style=\"margin:auto; display:block;\" />
+					  									</div>
+					  								</div>
+				  								</div>
 				  							</div>
-											<div class=\"container\">
-												<div class=\"post-date--hd col-xs-12\" style=\"position: relative; width:100%;\">
-													<div class=\"center-line--hd\"></div>
-														<h3>
-															Sunday, 5th February<span class=\"year\"> 2017</span>
-														</h3>
-											 	</div>
-												<div class=\"row\">
+
+												<div class=\"row inner-container\">
+													<div class=\"maxWidth\">
+														<div class=\"post-date--hd col-xs-12\" style=\"position: relative; width:100%;\">
+															<div class=\"center-line--hd\"></div>
+															<h3>
+																Sunday, 5th February<span class=\"year\"> 2017</span>
+															</h3>
+											 			</div>
 				  				";
 				  				endif 
 			  				?>
-							<div class="col-xs-6 col-sm-<?php echo $column; echo " ".$class; ?> ">
+							<div class="col-xs-12 col-sm-<?php echo $column; echo " ".$class; ?> ">
 									<? get_template_part('templates/content', 'featured'); ?>
 							</div>
 
