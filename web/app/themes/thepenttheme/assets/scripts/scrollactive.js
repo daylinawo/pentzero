@@ -1,10 +1,10 @@
 jQuery(document).ready(function($){
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if(scroll > 72){
+    if(scroll > 272){
         $(".m-header").addClass("active");
        	$(".m-header").removeClass("m-h--wrapper-nofixed");
-        $(".m-header").css({"top":"-72px"});
+        $(".m-header").css({"top":"-272px"});
 
     }
     else{

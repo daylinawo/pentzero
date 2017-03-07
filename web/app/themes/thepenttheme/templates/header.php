@@ -1,9 +1,10 @@
 
 <header class="m-header" role="banner">
 
-<div class="l-container l-c-style" style="height:72px; width:100%; background-color:#000;">
+<div class="l-container l-c-style" style="height:272px; width:100%; background-color:#000;">
   <div class="l-space">
-      <div class="l-block" style="height:72px; width:300px; display: inline-block;">
+      <div class="l-block" style="height:272px; width:300px; display: inline-block;">
+                                <img src="/app/themes/thepenttheme/assets/images/pageadvert1.jpg" maxwidth="80%" style="margin:auto; display:block;\" />
 
       </div>
   </div>
