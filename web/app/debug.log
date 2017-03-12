@@ -17108,3 +17108,128 @@ Stack trace:
 [01-Mar-2017 23:35:03 UTC] PHP   7. Video_Lightbox_Settings_Page->prettyPhoto_settings_section() /srv/www/pentzero.com/current/web/app/plugins/wp-video-lightbox/wpvl-settings.php:48
 [03-Mar-2017 19:30:43 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/pentzero.com/current/web/wp/wp-includes/update.php on line 499
 [05-Mar-2017 01:45:21 UTC] PHP Parse error:  syntax error, unexpected ''\\a' (T_ENCAPSED_AND_WHITESPACE) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/lib/setup.php on line 133
+[08-Mar-2017 19:45:03 UTC] PHP Notice:  Trying to get property of non-object in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[08-Mar-2017 19:45:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_thread() on null in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php:807
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(733): dsq_update_permalink(Object(WP_Post))
+#1 /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php(760): dsq_sync_post('127')
+#2 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(298): dsq_sync_forum()
+#3 /srv/www/pentzero.com/current/web/wp/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#4 /srv/www/pentzero.com/current/web/wp/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#5 phar:///usr/bin/wp/php/commands/cron.php(284): do_action_ref_array('dsq_sync_forum', Array)
+#6 phar:///usr/bin/wp/php/commands/cron.php(255): Cron_Event_Command::run_event(Object(stdClass))
+#7 [internal function]: Cron_Event_Command->run(Array, Array)
+#8 phar:///usr/bin/wp/php/WP_CLI/Dispatcher/CommandFactory.php(67): cal in /srv/www/pentzero.com/current/web/app/plugins/disqus-comment-system/disqus.php on line 807
+[11-Mar-2017 23:55:36 UTC] PHP Parse error:  syntax error, unexpected ''//fonts.googleapis.com/cs' (T_ENCAPSED_AND_WHITESPACE) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/lib/setup.php on line 136
+[12-Mar-2017 00:31:33 UTC] PHP Notice:  Undefined index: banner-ads-home in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 126
+[12-Mar-2017 00:31:33 UTC] PHP Stack trace:
+[12-Mar-2017 00:31:33 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:31:33 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:31:33 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:31:33 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:31:33 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:31:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 130
+[12-Mar-2017 00:31:33 UTC] PHP Stack trace:
+[12-Mar-2017 00:31:33 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:31:33 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:31:33 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:31:33 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:31:33 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:33:52 UTC] PHP Notice:  Undefined index: banner-ads-home in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 126
+[12-Mar-2017 00:33:52 UTC] PHP Stack trace:
+[12-Mar-2017 00:33:52 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:33:52 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:33:52 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:33:52 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:33:52 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:33:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 130
+[12-Mar-2017 00:33:52 UTC] PHP Stack trace:
+[12-Mar-2017 00:33:52 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:33:52 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:33:52 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:33:52 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:33:52 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:34:00 UTC] PHP Notice:  Undefined index: banner-ads-home in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 126
+[12-Mar-2017 00:34:00 UTC] PHP Stack trace:
+[12-Mar-2017 00:34:00 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:34:00 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:34:00 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:34:00 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:34:00 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:34:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 130
+[12-Mar-2017 00:34:00 UTC] PHP Stack trace:
+[12-Mar-2017 00:34:00 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:34:00 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:34:00 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:34:00 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:34:00 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:36:27 UTC] PHP Warning:  DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 3 in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 122
+[12-Mar-2017 00:36:28 UTC] PHP Stack trace:
+[12-Mar-2017 00:36:28 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:36:28 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:36:28 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:36:28 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:36:28 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:36:28 UTC] PHP   6. DOMDocument->loadHTML() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php:122
+[12-Mar-2017 00:36:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function return_dom_node_as_html() in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php:134
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php(24): include()
+#1 /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php(74): include('/srv/www/pentze...')
+#2 /srv/www/pentzero.com/current/web/wp/wp-blog-header.php(19): require_once('/srv/www/pentze...')
+#3 /srv/www/pentzero.com/current/web/index.php(5): require('/srv/www/pentze...')
+#4 {main}
+  thrown in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 134
+[12-Mar-2017 00:37:40 UTC] PHP Warning:  DOMDocument::loadHTML(): PI is not started correctlyerror parsing attribute name in Entity, line: 3 in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 122
+[12-Mar-2017 00:37:40 UTC] PHP Stack trace:
+[12-Mar-2017 00:37:40 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:37:40 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:37:40 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:37:40 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:37:40 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:37:40 UTC] PHP   6. DOMDocument->loadHTML() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php:122
+[12-Mar-2017 00:37:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function return_dom_node_as_html() in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php:134
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php(24): include()
+#1 /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php(74): include('/srv/www/pentze...')
+#2 /srv/www/pentzero.com/current/web/wp/wp-blog-header.php(19): require_once('/srv/www/pentze...')
+#3 /srv/www/pentzero.com/current/web/index.php(5): require('/srv/www/pentze...')
+#4 {main}
+  thrown in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 134
+[12-Mar-2017 00:38:25 UTC] PHP Warning:  DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 3 in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 122
+[12-Mar-2017 00:38:25 UTC] PHP Stack trace:
+[12-Mar-2017 00:38:25 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:38:25 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:38:25 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:38:25 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:38:25 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:38:25 UTC] PHP   6. DOMDocument->loadHTML() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php:122
+[12-Mar-2017 00:38:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function return_dom_node_as_html() in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php:134
+Stack trace:
+#0 /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php(24): include()
+#1 /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php(74): include('/srv/www/pentze...')
+#2 /srv/www/pentzero.com/current/web/wp/wp-blog-header.php(19): require_once('/srv/www/pentze...')
+#3 /srv/www/pentzero.com/current/web/index.php(5): require('/srv/www/pentze...')
+#4 {main}
+  thrown in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 134
+[12-Mar-2017 00:39:12 UTC] PHP Parse error:  syntax error, unexpected 'node' (T_STRING), expecting ';' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/functions.php on line 101
+[12-Mar-2017 00:39:16 UTC] PHP Warning:  DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 3 in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 122
+[12-Mar-2017 00:39:16 UTC] PHP Stack trace:
+[12-Mar-2017 00:39:16 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:39:16 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:39:16 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:39:16 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:39:16 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:39:16 UTC] PHP   6. DOMDocument->loadHTML() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php:122
+[12-Mar-2017 00:40:26 UTC] PHP Warning:  DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 3 in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 122
+[12-Mar-2017 00:40:26 UTC] PHP Stack trace:
+[12-Mar-2017 00:40:26 UTC] PHP   1. {main}() /srv/www/pentzero.com/current/web/index.php:0
+[12-Mar-2017 00:40:26 UTC] PHP   2. require() /srv/www/pentzero.com/current/web/index.php:5
+[12-Mar-2017 00:40:26 UTC] PHP   3. require_once() /srv/www/pentzero.com/current/web/wp/wp-blog-header.php:19
+[12-Mar-2017 00:40:26 UTC] PHP   4. include() /srv/www/pentzero.com/current/web/wp/wp-includes/template-loader.php:74
+[12-Mar-2017 00:40:26 UTC] PHP   5. include() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/base.php:24
+[12-Mar-2017 00:40:26 UTC] PHP   6. DOMDocument->loadHTML() /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php:122
+[12-Mar-2017 00:48:09 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ';' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 148
+[12-Mar-2017 00:48:33 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ';' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 148
+[12-Mar-2017 01:10:32 UTC] PHP Parse error:  syntax error, unexpected '<', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 187
+[12-Mar-2017 09:30:57 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 162
+[12-Mar-2017 09:33:57 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 152

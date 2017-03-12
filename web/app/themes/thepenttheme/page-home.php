@@ -87,26 +87,20 @@
 
 	<!-- BEGIN LATEST UPDATES SECTION -->
 	<section id="latest-updates" class="home-content">
-			<div class="row inner-container">
+			<div class="row inner-container clear">
 				<div class="maxWidth">
 					<header class="sub">
 						<h2 class="default--hd">
-							<span style="background-color: #eeb781; color: #fff;">Latest Updates</span>
+							<span style="background-color: #eeb781; color: #fff; margin-bottom: 20px;">Latest Updates</span>
 						</h2>
 					</header>
-			
-					<div class="post-date--hd" style="position: relative; width:100%;">
-						<h3>
-							Monday, 6th February <span class="year">2017</span>
-						</h3>
-					</div>
 
 		  	<?php
 		  		$paged = (get_query_var('page')) ? get_query_var('page') : 1;
 
 		  		$args = array(
 		  			'post_type'=> array('videos', 'gallery'),
-		  			'posts_per_page' => 14,
+		  			'posts_per_page' => -1,
 		  			'paged' => $paged,
 		  			);
 
@@ -117,54 +111,90 @@
 		  		$wp_query = null;
 		  		$wp_query = $postsQuery;
 
-		  			if($postsQuery->have_posts() ): $i = 0;
-		  				while($postsQuery->have_posts() ): $postsQuery->the_post(); ?>
-			  				<?php
+
+          	 	 // Catch output of sidebar in string
+          		 ob_start();
+           		 dynamic_sidebar("banner-ads-home");
+           		 $sidebar_output = ob_get_clean();
+
+     			 // Create DOMDocument with string (and set encoding to utf-8)
+         		 $dom = new DOMDocument;
+          		 @$dom->loadHTML('<?xml encoding="utf-8" ?>' . $sidebar_output);          		 
+
+          		  // Get IDs of the elements in your sidebar, e.g. "text-2"
+            			global $_wp_sidebars_widgets;
+            			$sidebar_element_ids = $_wp_sidebars_widgets["banner-ads-home"]; // Use ID of your sidebar
+            			// Save single widgets as html string in array
+           				 $sidebar_elements = [];
+
+           			foreach ($sidebar_element_ids as $sidebar_element_id):
+
+           				// Get widget by ID
+           				$element = $dom->getElementByID($sidebar_element_id);
+           				$sidebar_elements[] = return_dom_node_as_html($element);
+
+           			endforeach;
+
+
+           			$bannerad_count = 0;
+
+		  			if($postsQuery->have_posts() ): $i = 0; $day_check = "";
+		  				while($postsQuery->have_posts() ): $postsQuery->the_post();
+
 				  				if($i <= 5): $column = 4; $class = "most-recent"; 
 				  				else: $column = 3; $class = "older";
-				  				endif
-			  				?>
-			  				<?php 
-				  				if($i == 6): echo "
-				  					</div></div>
-				  					<div class=\"clear\"></div>
-				  							
-				  							<div class=\"row\">
-				  								<div class=\"wrapper alt grey\">
-				  									<div class=\"maxWidth\">
-					  									<div class=\"ad strip\">
-					  										<img src=\"/app/themes/thepenttheme/assets/images/pageadvert1.jpg\" maxwidth=\"80%\" style=\"margin:auto; display:block;\" />
-					  									</div>
-					  								</div>
-				  								</div>
-				  							</div>
+				  				endif;
 
-												<div class=\"row inner-container\">
-													<div class=\"maxWidth\">
-														<div class=\"post-date--hd col-xs-12\" style=\"position: relative; width:100%;\">
-															<h3>
-																Sunday, 5th February<span class=\"year\"> 2017</span>
-															</h3>
-											 			</div>
-				  				";
-				  				endif 
+				  				if($i <= 5): $widget_interval = 6; // After how many posts an banner ad is displayed
+				  				else: $widget_interval = 26;
+				  				endif;
+
+				  				if($i >= 6):
+				  						$day = get_the_date('j');
+				  						if($day != $day_check):
+				  								 ?>
+				  									
+				  									<div class="row"><div class="col-sm-12 post-date"><h3><? echo get_the_date();?><h3></div></div>
+
+				  						<?		
+				  						endif;
+				  				endif;
+		  						$day_check = $day;
 			  				?>
 							<div class="col-xs-12 col-sm-<?php echo $column; echo " ".$class; ?> ">
 									<? get_template_part('templates/content', 'featured'); ?>
 							</div>
 
-							<?if($i == 13): echo "</div></div>"; endif?>
+					<?php 	$i++; 
 
-					<?php $i++; endwhile; ?>
+			                if (!empty($sidebar_elements) && $i % $widget_interval === 0):
 
-					<div class="row" id="pagination">
-						<div class="col-sm-12 text-center">
+			                    // Echo the widget
+			                    echo $sidebar_elements[$bannerad_count];
+			                    $bannerad_count++;
+			                    // Restart after the last widget
+			                    if ($bannerad_count == count($sidebar_elements)):
+			                        $bannerad_count = 0;
+			                    endif;
+
+			                endif;
+
+					endwhile; 
+					?>
+					</div>
+				</div>
+
+
+			<? if($postsQuery->max_num_pages > 1): ?>					
+			<div class="row" id="pagination">
+				<div class="col-sm-12 text-center">
 							<?php 
 								echo paginate_links( array(
 									'total' => $postsQuery->max_num_pages,
 									) ); 
 							?>
 						</div>
+			<? endif; ?>			
 					<?php endif;
 					
 					$wp_query = null;
@@ -172,7 +202,7 @@
 					
 					wp_reset_postdata();
 		  		?>
-		</div>
+			</div>
 	</section>	<!-- END LATEST UPDATES SECTION -->
    <div class="clear"></div>
 </section>	<!-- END SECOND HALF WRAP -->

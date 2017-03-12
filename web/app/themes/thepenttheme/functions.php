@@ -98,4 +98,13 @@ function comicpress_copyright() {
     return $output;
 }
 
+// Return dom node from other document as html string
+function return_dom_node_as_html($element) {
+
+    $newdoc = new DOMDocument();
+    $newdoc->appendChild($newdoc->importNode($element, TRUE));
+
+    return $newdoc->saveHTML();
+}
+
 

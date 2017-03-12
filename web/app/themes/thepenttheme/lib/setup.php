@@ -90,8 +90,18 @@ function widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
+    register_sidebar([
+        'name' => "Banner Ads Home",
+        'id' => 'banner-ads-home',
+        'description' => "Widgets will be displayed after every 16th post",
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h2 class="widgettitle">',
+        'after_title' => '</h2>',
+  ]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
+
 
 /**
  * Determine which pages should NOT display the sidebar
