@@ -17233,3 +17233,6 @@ Stack trace:
 [12-Mar-2017 01:10:32 UTC] PHP Parse error:  syntax error, unexpected '<', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 187
 [12-Mar-2017 09:30:57 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 162
 [12-Mar-2017 09:33:57 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/page-home.php on line 152
+[12-Mar-2017 19:42:10 UTC] PHP Parse error:  syntax error, unexpected 'src' (T_STRING) in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/templates/content-featured.php on line 27
+[12-Mar-2017 19:42:20 UTC] PHP Parse error:  syntax error, unexpected '<', expecting case (T_CASE) or default (T_DEFAULT) or '}' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/templates/content-featured.php on line 27
+[12-Mar-2017 19:42:37 UTC] PHP Parse error:  syntax error, unexpected '<', expecting case (T_CASE) or default (T_DEFAULT) or '}' in /srv/www/pentzero.com/current/web/app/themes/thepenttheme/templates/content-featured.php on line 26

@@ -22,7 +22,7 @@
                           print '<span class="post-type glyphicon glyphicon-play"></span>';
                           break;
                         case 'gallery':
-                          print '<span class="post-type glyphicon glyphicon-camera"></span>';
+                          print '<span class="post-type icon icon-camera"></span>';
                           break;
                         default: 
                           print 'nothing.';
